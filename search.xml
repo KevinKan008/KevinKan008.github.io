@@ -3,7 +3,7 @@
   <entry>
     <title>MARKDOWN 语法说明</title>
     <url>/da891ef6/</url>
-    <content><![CDATA[<h2 id="常见样式">常见样式</h2>
+    <content><![CDATA[<h2 id="常见样式-1">常见样式 :+1: ?</h2>
 <p><span class="github-emoji" style="background-image: url(https://github.githubassets.com/images/icons/emoji/unicode/1f604.png?v8)" data-src="https://github.githubassets.com/images/icons/emoji/unicode/1f604.png?v8">😄</span> <em>斜体</em> <strong>粗体</strong> <span class="github-emoji" style="background-image: url(https://github.githubassets.com/images/icons/emoji/unicode/2728.png?v8)" data-src="https://github.githubassets.com/images/icons/emoji/unicode/2728.png?v8">✨</span> <del>删除线</del></p>
 <p>You can create footnotes like this<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>.</p>
 <p>Typora allows you to insert URLs as links, wrapped by <code>&lt;i@typora.io&gt;</code> <a href="mailto:i@typora.io" class="email">i@typora.io</a></p>
