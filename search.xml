@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>MARKDOWN 语法说明</title>
+    <url>/da891ef6/</url>
+    <content><![CDATA[<h2 id="常见样式">常见样式</h2>
+<p><span class="github-emoji" style="background-image: url(https://github.githubassets.com/images/icons/emoji/unicode/1f604.png?v8)" data-src="https://github.githubassets.com/images/icons/emoji/unicode/1f604.png?v8">😄</span> <em>斜体</em> <strong>粗体</strong> <span class="github-emoji" style="background-image: url(https://github.githubassets.com/images/icons/emoji/unicode/2728.png?v8)" data-src="https://github.githubassets.com/images/icons/emoji/unicode/2728.png?v8">✨</span> <del>删除线</del></p>
+<p>You can create footnotes like this<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>.</p>
+<p>Typora allows you to insert URLs as links, wrapped by <code>&lt;i@typora.io&gt;</code> <a href="mailto:i@typora.io" class="email">i@typora.io</a></p>
+<blockquote>
+<p>引用</p>
+</blockquote>
+<blockquote class="blockquote-center"><p>为伊消得人憔悴。。。。。。 <strong>Hexo</strong></p>
+</blockquote>
+<p><span style="color:red">this text is red</span></p>
+<a id="more"></a>
+<img data-src="/images/lion.png" />
+<center>
+TeX 吉祥物
+</center>
+<h2 id="列表">列表</h2>
+<ol type="1">
+<li>Item 1</li>
+<li>Item 2</li>
+<li>Item 3
+<ol type="1">
+<li>Item 3a</li>
+<li>Item 3b</li>
+</ol></li>
+</ol>
+<ul>
+<li>列表内容</li>
+<li>列表内容</li>
+<li>列表内容</li>
+</ul>
+<p>注意：- + * 跟内容之间都要有一个空格</p>
+<ol type="1">
+<li>列表内容q</li>
+<li>列表内容s</li>
+<li>列表内容e</li>
+</ol>
+<p>注意：序号跟内容之间要有空格</p>
+<p>待办列表:</p>
+<ul class="task-list">
+<li><input type="checkbox" disabled="" />
+Incomplete item</li>
+<li><input type="checkbox" disabled="" checked="" />
+Complete item</li>
+</ul>
+<h2 id="化学式">化学式</h2>
+<p>  <span class="math inline">\(\ce{[Pt(\eta^2-C2H4)Cl3]-}\)</span><br />
+<span class="math inline">\(\ce{NO_x}\)</span> <span class="math inline">\(\ce{CO3^2-_{(aq)}}\)</span> <span class="math inline">\(\pu{123 kJ//mol}\)</span> <span class="math inline">\(\ce{A-B=C#D}\)</span> <span class="math inline">\(\ce{C6H5-CHO}\)</span> <span class="math inline">\(\pu{123 kJ*mol-1}\)</span> <span class="math inline">\(\ce{[\{(X2)3\}2]^3+}\)</span> <span class="math inline">\(\ce{KCr(SO4)2*12H2O}\)</span> <span class="math inline">\(\pu{123 kJ mol-1}\)</span><br />
+<span class="math inline">\(\ce{^40_18Ar + \gamma{} + \nu_e}\)</span> <span class="math inline">\(\ce{M^{..}_i}\)</span><br />
+<span class="math inline">\(\ce{x Na(NH4)HPO4 -&gt;[\Delta] (NaPO3)_x + x NH3 ^ + x H2O}\)</span> <span class="math inline">\(\ce{Fe^{II}Fe^{III}2O4}\)</span></p>
+<h2 id="有用的链接">有用的链接</h2>
+<p><a href="https://github.com/theme-next/hexo-theme-next" target="_blank" rel="noopener">Next主题的GitHub站点</a></p>
+<p><a href="https://linwhitehat.github.io/%E5%8D%9A%E5%AE%A2%E4%B8%BB%E9%A2%98%E4%BC%98%E5%8C%96.html#more" target="_blank" rel="noopener">Next例子</a></p>
+<p><a href="https://shd101wyy.github.io/markdown-preview-enhanced/#/zh-cn" target="_blank" rel="noopener">Markdown Preview Enhanced 插件使用教程</a></p>
+<h2 id="代码">代码</h2>
+<p>清除、生成、本地启动 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo clean &amp;&amp; hexo g -s</span><br></pre></td></tr></table></figure></p>
+<p>清除、生成、GitHub部署 <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">hexo clean &amp;&amp; hexo g -d</span><br></pre></td></tr></table></figure></p>
+<p>单行代码 Some <code>inline code</code>.</p>
+<p>语言标注 <figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="comment">// An highlighted block</span></span><br><span class="line"><span class="keyword">var</span> foo = <span class="string">'bar'</span>;</span><br></pre></td></tr></table></figure></p>
+<figure class="highlight tex"><table><tr><td class="code"><pre><span class="line"><span class="tag">\<span class="name">documentclass</span><span class="string">&#123;article&#125;</span></span></span><br><span class="line"><span class="tag">\<span class="name">usepackage</span><span class="string">&#123;mwe&#125;</span></span>  <span class="comment">% for dummy text</span></span><br><span class="line"><span class="tag">\<span class="name">begin</span><span class="string">&#123;document&#125;</span></span></span><br><span class="line">Foo</span><br><span class="line"><span class="tag">\<span class="name">begin</span><span class="string">&#123;figure&#125;</span><span class="string">[htb]</span></span>  </span><br><span class="line"><span class="tag">\<span class="name">end</span><span class="string">&#123;figure&#125;</span></span></span><br><span class="line">bar</span><br><span class="line"><span class="tag">\<span class="name">end</span><span class="string">&#123;document&#125;</span></span></span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">print(<span class="string">"Hello Hexo!"</span>)</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">echo</span> -e <span class="string">"export PATH=<span class="variable">$(npm prefix -g)</span>/bin:<span class="variable">$PATH</span>"</span> &gt;&gt; ~/.bashrc &amp;&amp; <span class="built_in">source</span> ~/.bashrc</span><br></pre></td></tr></table></figure>
+<h2 id="表格">表格</h2>
+<table>
+<thead>
+<tr class="header">
+<th>Item</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Computer</td>
+<td>$1600</td>
+</tr>
+<tr class="even">
+<td>Phone</td>
+<td>$12</td>
+</tr>
+<tr class="odd">
+<td>Pipe</td>
+<td>$1</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: center;">Column 1</th>
+<th style="text-align: right;">Column 2</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">centered</td>
+<td style="text-align: right;">right-aligned</td>
+</tr>
+</tbody>
+</table>
+<h2 id="数学公式">数学公式</h2>
+<p>示例1 <span class="math inline">\(\bra{\psi} \quad \ket{\psi}\)</span></p>
+<p>示例2 <span class="math inline">\(\Gamma(n) = (n-1)!\quad \forall n \in \mathbb{N}\)</span></p>
+<p>对于简单的公式，使用下面的方式给公式一个标记， <span class="math display">\[
+\begin{equation}\label{mee}
+E=mc^2
+\end{equation}
+\]</span> 然后，在正文中，你可以轻松引用上述公式，一个简单的例子如下： 著名的质能方程 <span class="math inline">\(\eqref{mee}\)</span> 由爱因斯坦提出 ...</p>
+<p>示例3 <span class="math display">\[ \Gamma(z) = \int_0^\infty t^{z-1}e^{-t}dt \]</span></p>
+<p>测试4 <span class="math inline">\(\mathrm{e}^{i\pi} + 1 = 0\)</span> 测试5 <span class="math display">\[ \mathrm{e}^{i\pi} + 1 = 0 \]</span></p>
+<p><span class="math display">\[
+\begin{eqnarray}
+\nabla\cdot\vec{E} &amp;=&amp; \frac{\rho}{\epsilon_0} \\
+\nabla\cdot\vec{B} &amp;=&amp; 0 \\
+\nabla\times\vec{E} &amp;=&amp; -\frac{\partial B}{\partial t} \\
+\nabla\times\vec{B} &amp;=&amp; \mu_0\left(\vec{J}+\epsilon_0\frac{\partial E}{\partial t} \right)
+\end{eqnarray}
+\]</span></p>
+<section class="footnotes" role="doc-endnotes">
+<hr />
+<ol>
+<li id="fn1" role="doc-endnote"><p>Here is the <em>text</em> of the <strong>footnote</strong>.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section>
+]]></content>
+      <categories>
+        <category>Markdown</category>
+      </categories>
+      <tags>
+        <tag>Typora</tag>
+        <tag>Markdown</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Hello World</title>
+    <url>/4a17b156/</url>
+    <content><![CDATA[<script>
+MathJax = {
+  loader: {
+    load: ['[tex]/physics']
+  },
+  tex: {
+    packages: {'[+]': ['physics']}
+  }
+};
+</script>
+<script id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+<h2 id="hello-hexo">Hello Hexo!</h2>
+<p>Hello <span class="math inline">\(\LaTeX\)</span></p>
+<p><span class="math inline">\(\Gamma(n) = (n-1)!\quad \forall n \in \mathbb{N}\)</span></p>
+<p><span class="math inline">\(\bra{\psi} \quad \ket{\psi}\)</span></p>
+<p><span class="math inline">\(\bra{\psi} \quad \ket{\psi} \quad \order{x^2} \quad \comm{A}{B}\)</span></p>
+<p><span class="math display">\[ \Braket{ \phi | \frac{\partial^2}{\partial t^2} | \psi } \]</span></p>
+<p><span class="math display">\[ \laplacian{\Psi} \quad \curl{\vb{a}} \quad \div{\vb{a}} \quad \grad{\Psi} \]</span></p>
+<img data-src="/images/1.jpg" />
+<center>
+酒井户 <span class="github-emoji" style="background-image: url(https://github.githubassets.com/images/icons/emoji/unicode/1f604.png?v8)" data-src="https://github.githubassets.com/images/icons/emoji/unicode/1f604.png?v8">😄</span>
+</center>
+<figure class="highlight tex"><figcaption><span>_/source/main.tex</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="tag">\<span class="name">documentclass</span><span class="string">&#123;article&#125;</span></span></span><br><span class="line"><span class="tag">\<span class="name">usepackage</span><span class="string">&#123;amsmath&#125;</span></span></span><br><span class="line"><span class="tag">\<span class="name">begin</span><span class="string">&#123;document&#125;</span></span></span><br><span class="line">Hello <span class="tag">\<span class="name">LaTeX</span><span class="string">&#123;&#125;</span></span>!</span><br><span class="line"><span class="tag">\<span class="name">(</span></span> E=mc^2 <span class="tag">\<span class="name">)</span></span></span><br><span class="line"><span class="tag">\<span class="name">end</span><span class="string">&#123;document&#125;</span></span></span><br></pre></td></tr></table></figure>
+<a id="more"></a>
+<h2 id="quick-start">Quick Start</h2>
+<h3 id="create-a-new-post">Create a new post</h3>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
+<h3 id="run-server">Run server</h3>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">hexo server</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
+<h3 id="generate-static-files">Generate static files</h3>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo generate</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
+<h3 id="deploy-to-remote-sites">Deploy to remote sites</h3>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo deploy</span><br></pre></td></tr></table></figure>
+<h2 id="使用-mathjax-给公式编号并引用公式">使用 MathJax 给公式编号并引用公式</h2>
+<p>在新版本的 <code>NexT</code> 主题中，我们加入了公式自动编号和引用功能。下面简要介绍一下如何使用这项功能。</p>
+<p>为了使用这项功能，一般来说，你必须把所使用的 <span class="math inline">\(\LaTeX\)</span> 公式放在 <code>equation</code> 环境里面，采用旧的方法（也就是说，仅仅把公式的每一边用两个 <code>$</code> 符号包含起来）是无效的。如何引用公式？你只需要在书写公式的时候给公式一个 <code>\label{}</code> 标记（<code>tag</code>），然后在正文中，可以使用 <code>\ref{}</code> 或者 <code>\eqref{}</code> 命令来引用对应的公式。使用 <code>\eqref{}</code> 是推荐的方式，因为如果你使用 <code>\ref{}</code>，公式在文中的引用编号将没有圆括号包围。下面介绍几种常见的公式编号例子。</p>
+<p>对于简单的公式，使用下面的方式给公式一个标记，</p>
+<p><span class="math display">\[\begin{equation}\label{eq1}
+E=mc^2
+\end{equation}\]</span> 然后，在正文中，你可以轻松引用上述公式，一个简单的例子如下： <span class="math inline">\(a^2+b^2=c^2\)</span> 著名的质能方程 <span class="math inline">\(\ref{eq1}\)</span> 由爱因斯坦提出 ... 对于多行公式，在 <code>equation</code> 环境中，你可以使用 <code>aligned</code> 环境把公式分成多行，</p>
+<p><span class="math display">\[\begin{equation}\label{eq2}
+\begin{aligned}
+a &amp;= b + c \\
+  &amp;= d + e + f + g \\
+  &amp;= h + i
+\end{aligned}
+\end{equation}\]</span> 要对齐多个公式，我们需要使用 <code>align</code> 环境。<code>align</code> 环境中的每个公式都有自己的编号：</p>
+<p><span class="math display">\[\begin{align}
+a &amp;= b + c \label{eq3} \\
+x &amp;= yz \label{eq4}\\
+l &amp;= m - n \label{eq5}
+\end{align}\]</span> 在 <code>align</code> 环境中，如果你不想给某个或某几个公式编号，那么在这些公式后面使用 <code>\nonumber</code> 命令即可。例如：</p>
+<p><span class="math display">\[\begin{align}
+-4 + 5x &amp;= 2+y \nonumber  \\
+ w+2 &amp;= -1+w \\
+ ab &amp;= cb
+\end{align}\]</span> 有时，你可能会希望采用更加奇特的方式来标记和引用你的公式，你可以通过使用 <code>\tag{}</code> 命令来实现，例如：</p>
+<p><span class="math display">\[ x+1\over\sqrt{1-x^2} \tag{i}\label{eq_tag} \]</span> 如果你想要了解更多信息，请访问 <a href="https://docs.mathjax.org/en/latest/input/tex/eqnumbers.html" target="_blank" rel="noopener">MathJax 关于公式编号的官方文档</a>。同时，你也可以阅读 <a href="https://theme-next.org/docs/third-party-services/math-equations" target="_blank" rel="noopener">这篇文档</a> 来获取更多细节信息。</p>
+]]></content>
+      <categories>
+        <category>Hexo</category>
+      </categories>
+      <tags>
+        <tag>Markdown</tag>
+        <tag>Hexo</tag>
+      </tags>
+  </entry>
+</search>
