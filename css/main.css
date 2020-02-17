@@ -1275,7 +1275,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #70c624;
+  background: #747367;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -2735,6 +2735,11 @@ hr {
 }
 .bilibili_tv:before {
   content: "\e60f";
+}
+#jrsc {
+  font-style: italic;
+  font-size: 20px;
+  color: #fc6423;
 }
 .moon-menu,
 .moon-menu-text {
