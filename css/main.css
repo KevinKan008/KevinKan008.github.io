@@ -1275,7 +1275,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #747367;
+  background: #24ff82;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -2738,7 +2738,7 @@ hr {
 }
 #jrsc {
   font-style: italic;
-  font-size: 20px;
+  font-size: 19px;
   color: #fc6423;
 }
 .moon-menu,
