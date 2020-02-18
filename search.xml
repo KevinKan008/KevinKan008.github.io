@@ -1,6 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>External Libraries</title>
+    <url>/c6731e3b/</url>
+    <content><![CDATA[<h3 id="pjax">PJAX</h3>
+<p><a href="https://github.com/MoOx/pjax" target="_blank" rel="noopener">Pjax</a> is a standalone JavaScript module that uses AJAX (XmlHttpRequest) and <code>pushState()</code> to deliver a fast browsing experience.</p>
+<p>It allows you to completely transform the user experience of standard websites (server-side generated or static ones) to make users feel like they are browsing an app, especially for those with low bandwidth connections.</p>
+<div class="tabs" id="pjax"><ul class="nav-tabs"><li class="tab active"><a href="#pjax-1">Installation →</a></li><li class="tab"><a href="#pjax-2">NexT Config</a></li></ul><div class="tab-content"><div class="tab-pane active" id="pjax-1"><p>Change dir to NexT directory, and install module to <code>source/lib</code> directory.</p>
+<figure class="highlight bash">
+<table>
+<tr>
+<td class="gutter">
+<pre><span class="line">1</span><br><span class="line">2</span><br></pre>
+</td>
+<td class="code">
+<pre><span class="line">$ <span class="built_in">cd</span> themes/next</span><br><span class="line">$ git <span class="built_in">clone</span> https://github.com/theme-next/theme-next-pjax <span class="built_in">source</span>/lib/pjax</span><br></pre>
+</td>
+</tr>
+</table>
+</figure>
+<div class="note info">
+<pre><code>        If you want to use the CDN instead of clone this repo, then need to &lt;strong&gt;set vendors&lt;/strong&gt; in &lt;span class=&quot;label primary&quot;&gt;theme config file&lt;/span&gt;:&lt;figure class=&quot;highlight yml&quot;&gt;&lt;figcaption&gt;&lt;span&gt;next/_config.yml&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;attr&quot;&gt;vendors:&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &lt;span class=&quot;string&quot;&gt;...&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &lt;span class=&quot;attr&quot;&gt;pjax:&lt;/span&gt; &lt;span class=&quot;string&quot;&gt;//cdn.jsdelivr.net/gh/theme-next/theme-next-pjax@0/pjax.min.js&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &lt;span class=&quot;string&quot;&gt;...&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+      &lt;/div&gt;</code></pre></div><div class="tab-pane" id="pjax-2"><p>After the plugin installed, you can enable it by setting value <code>pjax</code> to <code>true</code> in <span class="label primary">theme config file</span>.</p>
+<figure class="highlight yml">
+<figcaption>
+<span>next/_config.yml</span>
+</figcaption>
+<table>
+<tr>
+<td class="gutter">
+<pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre>
+</td>
+<td class="code">
+<pre><span class="line"><span class="comment"># Easily enable fast Ajax navigation on your website.</span></span><br><span class="line"><span class="comment"># Dependencies: https://github.com/theme-next/theme-next-pjax</span></span><br><span class="line"><span class="comment"># For moreinformation: https://github.com/MoOx/pjax</span></span><br><span class="line"><span class="attr">pjax:</span> <span class="literal">true</span></span><br></pre>
+</td>
+</tr>
+</table>
+</figure></div></div></div>
+<h3 id="centered-quote">Centered Quote</h3>
+<figure class="highlight routeros"><table><tr><td class="code"><pre><span class="line">&#123;% cq %&#125; Elegant <span class="keyword">in</span> code,<span class="built_in"> simple </span><span class="keyword">in</span> core &#123;% endcq %&#125;</span><br></pre></td></tr></table></figure>
+<blockquote class="blockquote-center"><p>Elegant in code, simple in core</p>
+</blockquote>
+<figure class="highlight armasm"><table><tr><td class="code"><pre><span class="line">&#123;% <span class="keyword">btn </span>https:www.<span class="keyword">baidu.com,, </span>download fa-<span class="number">5</span>x, 百度 %&#125;</span><br><span class="line">&#123;% <span class="keyword">btn </span>https:www.<span class="keyword">baidu.com,, </span>download fa-<span class="number">2</span>x, 百度 %&#125;</span><br><span class="line">&#123;% <span class="keyword">btn </span>https:www.<span class="keyword">baidu.com, </span>百度 (<span class="keyword">buggy), </span>download %&#125;</span><br><span class="line">&#123;% <span class="keyword">btn </span>https:www.<span class="keyword">baidu.com, </span>百度 (fixed width), download fa-fw %&#125;</span><br></pre></td></tr></table></figure>
+<a class="btn" href="https:www.baidu.com" target="_blank" rel="noopener" title="百度"><i class="fa fa-download fa-5x"></i></a>
+<a class="btn" href="https:www.baidu.com" target="_blank" rel="noopener" title="百度"><i class="fa fa-download fa-2x"></i></a>
+<a class="btn" href="https:www.baidu.com" target="_blank" rel="noopener"><i class="fa fa-download"></i>百度 (buggy)</a>
+<a class="btn" href="https:www.baidu.com" target="_blank" rel="noopener"><i class="fa fa-download fa-fw"></i>百度 (fixed width)</a>
+]]></content>
+  </entry>
+  <entry>
     <title>MARKDOWN 语法说明</title>
     <url>/da891ef6/</url>
     <content><![CDATA[<h2 id="常见样式">常见样式</h2>
