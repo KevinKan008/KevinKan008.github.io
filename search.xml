@@ -41,11 +41,11 @@
 <figure class="highlight routeros"><table><tr><td class="code"><pre><span class="line">&#123;% cq %&#125; Elegant <span class="keyword">in</span> code,<span class="built_in"> simple </span><span class="keyword">in</span> core &#123;% endcq %&#125;</span><br></pre></td></tr></table></figure>
 <blockquote class="blockquote-center"><p>Elegant in code, simple in core</p>
 </blockquote>
-<figure class="highlight armasm"><table><tr><td class="code"><pre><span class="line">&#123;% <span class="keyword">btn </span>https:www.<span class="keyword">baidu.com,, </span>download fa-<span class="number">5</span>x, 百度 %&#125;</span><br><span class="line">&#123;% <span class="keyword">btn </span>https:www.<span class="keyword">baidu.com,, </span>download fa-<span class="number">2</span>x, 百度 %&#125;</span><br><span class="line">&#123;% <span class="keyword">btn </span>https:www.<span class="keyword">baidu.com, </span>百度 (<span class="keyword">buggy), </span>download %&#125;</span><br><span class="line">&#123;% <span class="keyword">btn </span>https:www.<span class="keyword">baidu.com, </span>百度 (fixed width), download fa-fw %&#125;</span><br></pre></td></tr></table></figure>
-<a class="btn" href="https:www.baidu.com" target="_blank" rel="noopener" title="百度"><i class="fa fa-download fa-5x"></i></a>
-<a class="btn" href="https:www.baidu.com" target="_blank" rel="noopener" title="百度"><i class="fa fa-download fa-2x"></i></a>
-<a class="btn" href="https:www.baidu.com" target="_blank" rel="noopener"><i class="fa fa-download"></i>百度 (buggy)</a>
-<a class="btn" href="https:www.baidu.com" target="_blank" rel="noopener"><i class="fa fa-download fa-fw"></i>百度 (fixed width)</a>
+<figure class="highlight armasm"><table><tr><td class="code"><pre><span class="line">&#123;% <span class="keyword">btn </span>https://www.<span class="keyword">baidu.com,, </span>download fa-<span class="number">3</span>x, 百度 %&#125;</span><br><span class="line">&#123;% <span class="keyword">btn </span>https://www.<span class="keyword">baidu.com,, </span>download fa-<span class="number">2</span>x, 百度 %&#125;</span><br><span class="line">&#123;% <span class="keyword">btn </span>https://www.<span class="keyword">baidu.com, </span>百度 (<span class="keyword">buggy), </span>download %&#125;</span><br><span class="line">&#123;% <span class="keyword">btn </span>https://www.<span class="keyword">baidu.com, </span>百度 (fixed width), download fa-fw %&#125;</span><br></pre></td></tr></table></figure>
+<a class="btn" href="https://www.baidu.com" target="_blank" rel="noopener" title="百度"><i class="fa fa-download fa-3x"></i></a>
+<a class="btn" href="https://www.baidu.com" target="_blank" rel="noopener" title="百度"><i class="fa fa-download fa-2x"></i></a>
+<a class="btn" href="https://www.baidu.com" target="_blank" rel="noopener"><i class="fa fa-download"></i>百度 (buggy)</a>
+<a class="btn" href="https://www.baidu.com" target="_blank" rel="noopener"><i class="fa fa-download fa-fw"></i>百度 (fixed width)</a>
 ]]></content>
   </entry>
   <entry>
