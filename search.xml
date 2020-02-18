@@ -287,6 +287,21 @@ MathJax = {
   src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 </script>
 <h2 id="hello-hexo">Hello Hexo!</h2>
+<a class="btn" href="https://www.baidu.com" target="_blank" rel="noopener" title="百度"><i class="fa fa-download fa-3x"></i></a>
+<a class="btn" href="https://www.baidu.com" target="_blank" rel="noopener" title="百度"><i class="fa fa-download fa-2x"></i></a>
+<a class="btn" href="https://www.baidu.com" target="_blank" rel="noopener"><i class="fa fa-download"></i>百度 (buggy)</a>
+<a class="btn" href="https://www.baidu.com" target="_blank" rel="noopener"><i class="fa fa-download fa-fw"></i>百度 (fixed width)</a>
+<a class="btn" href="#"><i class="fa fa-header"></i></a>
+<a class="btn" href="#"><i class="fa fa-edge"></i></a>
+<a class="btn" href="#"><i class="fa fa-times"></i></a>
+<a class="btn" href="#"><i class="fa fa-circle-o"></i></a>
+<a class="btn" href="#"><i class="fa fa-italic"></i></a>
+<a class="btn" href="#"><i class="fa fa-scribd"></i></a>
+<a class="btn" href="#"><i class="fa fa-google"></i></a>
+<a class="btn" href="#"><i class="fa fa-chrome"></i></a>
+<a class="btn" href="#"><i class="fa fa-opera"></i></a>
+<a class="btn" href="#"><i class="fa fa-diamond fa-rotate-270"></i></a>
+<a class="btn" href="https://github.com/theme-next/hexo-theme-next" target="_blank" rel="noopener" title="NexT source code"><i class="fa fa-github fa-fw fa-lg"></i>NexT</a>
 <p>Hello <span class="math inline">\(\LaTeX\)</span></p>
 <p><span class="math inline">\(\Gamma(n) = (n-1)!\quad \forall n \in \mathbb{N}\)</span></p>
 <p><span class="math inline">\(\bra{\psi} \quad \ket{\psi}\)</span></p>
