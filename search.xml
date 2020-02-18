@@ -123,7 +123,7 @@ E=mc^2
 <section class="footnotes" role="doc-endnotes">
 <hr />
 <ol>
-<li id="fn1" role="doc-endnote"><p>Here is <span class="math inline">\(a^2+b^2\)</span> the <em>text</em> of the <strong>footnote</strong>.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn1" role="doc-endnote"><p>Here is <span class="math inline">\(a^2+b^2=c^2\)</span> the <em>text</em> of the <strong>footnote</strong>.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 </ol>
 </section>
 ]]></content>
