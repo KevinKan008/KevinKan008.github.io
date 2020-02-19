@@ -285,13 +285,13 @@ MathJax = {
 <p><span style="color:red">this text is red</span></p>
 <p><a href="/4a17b156#Start">hello-world/#Start</a></p>
 <p><a href="/c6731e3b#Quote">hello-world/#Start</a></p>
-<p><a href="#Start">hello-world/#Start</a></p>
 <figure>
 <img data-src="/images/1.jpg" alt="" /><figcaption>hello-world/#Start</figcaption>
 </figure>
 <p><a href="/images/1.jpg">hello-world/#Start</a></p>
-<p><a href="/#Start">hello-world/#Start</a></p>
+<p><a href="#Start">hello-world/#Start</a></p>
 <p><a href="/4a17b156/#Start">hello-world/#Start</a></p>
+<p><a href="/c6731e3b/#Quote">hello-world/#Start</a></p>
 /c6731e3b/
 <a href="/c6731e3b/" title="其他文本">其他文本</a>
 <a href="/c6731e3b/" title="External Libraries">External Libraries</a>
