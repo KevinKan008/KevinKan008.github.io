@@ -91,6 +91,7 @@ Add another diagram to demo page    : 48h
     <title>External Libraries</title>
     <url>/c6731e3b/</url>
     <content><![CDATA[<h3 id="pjax">PJAX</h3>
+<p><span class="github-emoji" style="background-image: url(https://github.githubassets.com/images/icons/emoji/unicode/2615.png?v8)" data-src="https://github.githubassets.com/images/icons/emoji/unicode/2615.png?v8">☕</span> ☕️</p>
 <p><a href="https://github.com/MoOx/pjax" target="_blank" rel="noopener">Pjax</a> is a standalone JavaScript module that uses AJAX (XmlHttpRequest) and <code>pushState()</code> to deliver a fast browsing experience.</p>
 <p>It allows you to completely transform the user experience of standard websites (server-side generated or static ones) to make users feel like they are browsing an app, especially for those with low bandwidth connections.</p>
 <div class="tabs" id="pjax"><ul class="nav-tabs"><li class="tab active"><a href="#pjax-1">Installation →</a></li><li class="tab"><a href="#pjax-2">NexT Config</a></li></ul><div class="tab-content"><div class="tab-pane active" id="pjax-1"><p>Change dir to NexT directory, and install module to <code>source/lib</code> directory.</p>
