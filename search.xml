@@ -5,14 +5,6 @@
     <url>/e3afb269/</url>
     <content><![CDATA[<h2 id="usage">Usage</h2>
 <figure class="highlight js"><figcaption><span>mermaid.js</span></figcaption><table><tr><td class="code"><pre><span class="line">&#123;% mermaid type %&#125;</span><br><span class="line">&#123;% endmermaid %&#125;</span><br><span class="line"></span><br><span class="line">type : type <span class="keyword">of</span> the mermaid chart, visit https:<span class="comment">//github.com/knsv/mermaid for more information.</span></span><br></pre></td></tr></table></figure>
-<p>Eg1: <pre class="mermaid" style="text-align: center;">
-            graph TD
-            A[Christmas] -->|Get money| B(Go shopping)
-B --> C{Let me thinksssss<br>ssssssssssssssssssssss<br>sssssssssssssssssssssssssss}
-C -->|One| D[Laptop]
-C -->|Two| E[iPhone]
-C -->|Three| F[Car]
-          </pre></p>
 <p>Eg2: <pre class="mermaid" style="text-align: center;">
             sequenceDiagram
             participant Alice
@@ -268,8 +260,8 @@ E=mc^2
         <category>Markdown</category>
       </categories>
       <tags>
-        <tag>Typora</tag>
         <tag>Markdown</tag>
+        <tag>Typora</tag>
       </tags>
   </entry>
   <entry>
@@ -289,6 +281,13 @@ MathJax = {
   src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 </script>
 <h2 id="hello-hexo">Hello Hexo!</h2>
+<figure class="highlight django"><table><tr><td class="code"><pre><span class="line"><span class="template-tag">&#123;% <span class="name">post_path</span> pjax-intro %&#125;</span></span><br><span class="line"><span class="template-tag">&#123;% <span class="name">post_link</span> pjax-intro '其他文本' %&#125;</span></span><br><span class="line"><span class="template-tag">&#123;% <span class="name">post_link</span> pjax-intro %&#125;</span></span><br><span class="line"><span class="template-tag">&#123;% <span class="name">post_link</span> pjax-intro 'use a &lt;b&gt;bold&lt;/b&gt; false title' %&#125;</span></span><br><span class="line"><span class="template-tag">&#123;% <span class="name">post_link</span> pjax-intro 'use a &lt;b&gt;bold&lt;/b&gt; false title' true %&#125;</span></span><br><span class="line"><span class="template-tag">&#123;% <span class="name">post_link</span> pjax-intro 'use a &lt;b&gt;bold&lt;/b&gt; false title' false %&#125;</span></span><br></pre></td></tr></table></figure>
+/c6731e3b/
+<a href="/c6731e3b/" title="其他文本">其他文本</a>
+<a href="/c6731e3b/" title="External Libraries">External Libraries</a>
+<a href="/c6731e3b/" title="use a &lt;b&gt;bold&lt;&#x2F;b&gt; false title">use a &lt;b&gt;bold&lt;&#x2F;b&gt; false title</a>
+<a href="/c6731e3b/" title="use a &lt;b&gt;bold&lt;&#x2F;b&gt; false title">use a &lt;b&gt;bold&lt;&#x2F;b&gt; false title</a>
+<a href="/c6731e3b/" title="use a &lt;b&gt;bold&lt;&#x2F;b&gt; false title">use a <b>bold</b> false title</a>
 <a class="btn" href="https://www.baidu.com" target="_blank" rel="noopener" title="百度"><i class="fa fa-download fa-3x"></i></a>
 <a class="btn" href="https://www.baidu.com" target="_blank" rel="noopener" title="百度"><i class="fa fa-download fa-2x"></i></a>
 <a class="btn" href="https://www.baidu.com" target="_blank" rel="noopener"><i class="fa fa-download"></i>百度 (buggy)</a>
@@ -359,8 +358,8 @@ l &amp;= m - n \label{eq5}
         <category>Hexo</category>
       </categories>
       <tags>
-        <tag>Markdown</tag>
         <tag>Hexo</tag>
+        <tag>Markdown</tag>
       </tags>
   </entry>
 </search>
