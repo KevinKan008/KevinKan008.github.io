@@ -3,7 +3,7 @@
   <entry>
     <title>MermaidTest</title>
     <url>/e3afb269/</url>
-    <content><![CDATA[<h2 id="usage">Usage</h2>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="usage">Usage</h2>
 <figure class="highlight js"><figcaption><span>mermaid.js</span></figcaption><table><tr><td class="code"><pre><span class="line">&#123;% mermaid type %&#125;</span><br><span class="line">&#123;% endmermaid %&#125;</span><br><span class="line"></span><br><span class="line">type : type <span class="keyword">of</span> the mermaid chart, visit https:<span class="comment">//github.com/knsv/mermaid for more information.</span></span><br></pre></td></tr></table></figure>
 <p>Eg2: <pre class="mermaid" style="text-align: center;">
             sequenceDiagram
@@ -82,7 +82,7 @@ Add another diagram to demo page    : 48h
   <entry>
     <title>External Libraries</title>
     <url>/c6731e3b/</url>
-    <content><![CDATA[<h1 id="pjax">PJAX</h1>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="pjax">PJAX</h1>
 <p>:coffee: ☕️ 为啥用复制的emoji比插件用语法生成的好(此时emoji右下角有额外的东西)</p>
 <iframe src="/tags/index.html" width="500" height="300" frameborder="0" loading="lazy" allowfullscreen></iframe>
 <p><a href="https://github.com/MoOx/pjax" target="_blank" rel="noopener">Pjax</a> is a standalone JavaScript module that uses AJAX (XmlHttpRequest) and <code>pushState()</code> to deliver a fast browsing experience.</p>
@@ -132,7 +132,7 @@ Add another diagram to demo page    : 48h
   <entry>
     <title>MARKDOWN 语法说明</title>
     <url>/da891ef6/</url>
-    <content><![CDATA[<h2 id="常见样式-dark模式">常见样式-DARK模式 🚀</h2>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="常见样式-dark模式">常见样式-DARK模式 🚀</h2>
 <p>:zap: :bear:</p>
 <p>:smile: <em>斜体</em> <strong>粗体</strong> :sparkles: <del>删除线</del></p>
 <p>You can create footnotes like this<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>.</p>
@@ -267,7 +267,7 @@ E=mc^2
   <entry>
     <title>Hello World &amp; Hexo</title>
     <url>/4a17b156/</url>
-    <content><![CDATA[<script>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script>
 MathJax = {
   loader: {
     load: ['[tex]/physics']
