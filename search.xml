@@ -281,7 +281,7 @@ MathJax = {
   src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 </script>
 <h2 id="hello-hexo">Hello Hexo!</h2>
-<p>看看能否成功</p>
+<p>hello jay <a href="https://music.liuzhijin.cn" target="_blank" rel="noopener">歌词id</a> 看看能否成功</p>
 <h3 id="font-awesome-特性"><a name="awesome">Font Awesome 特性</a></h3>
 <p><i class="fa fa-google"></i>oole<br> <i class="fa fa-google fa-spin"></i>oole<br> <i class="fa fa-google fa-spin" aria-hidden="true"></i>oole<br> <i class="fa fa-google fa-spin fa-fw"></i>oole<br> <i class="fa fa-google fa-spin fa-fw" aria-hidden="true"></i>oole<br> <i class="fa fa-chrome fa-spin fa-3x"></i>oole<br> <i class="fa fa-google fa-spin fa-3x fa-fw" aria-hidden="true"></i>oole<br> <i class="fa fa-spinner fa-pulse fa-3x fa-fw"></i></p>
 <p><i class="fa fa-crow"></i> <i class="fa fa-key"></i> normal<br> <span style="color:#FFB90F;"><i class="fa fa-key"></i></span>golden<br> <span style="color:#FFB90F;"><i class="fa fa-key fa-rotate-90"></i> </span>fa-rotate-90<br> <span style="color:#FFB90F;"><i class="fa fa-key fa-rotate-180"></i></span> fa-rotate-180<br> <span style="color:#FFB90F;"><i class="fa fa-key fa-rotate-270"></i></span> fa-rotate-270<br> <span style="color:#FFB90F;"><i class="fa fa-key fa-flip-horizontal"></i></span> fa-flip-horizontal<br> <span style="color:#FFB90F;"><i class="fa fa-key fa-flip-vertical"></i></span> fa-flip-vertical</p>
