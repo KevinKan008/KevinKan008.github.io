@@ -304,6 +304,7 @@ MathJax = {
 <a href="/c6731e3b/" title="&lt;span style&#x3D;&quot;color:red&quot;&gt;use a &lt;b&gt;bold&lt;&#x2F;b&gt; false title&lt;&#x2F;span&gt;"><span style="color:red">use a <b>bold</b> false title</span></a>
 <a href="/c6731e3b/" title="use a &lt;b&gt;bold&lt;&#x2F;b&gt; and &lt;span style&#x3D;&quot;color: blue&quot;&gt; false title&lt;&#x2F;span&gt;">use a <b>bold</b> and <span style="color: blue"> false title</span></a>
 <p><span style="color: blue;"><a class="btn" href="https://www.baidu.com" target="_blank" rel="noopener" title="百度"><i class="fa fa-download fa-2x"></i></a></span></p>
+<p><a href="https://www.baidu.com" target="_blank" rel="noopener"><i class="fa fa-download"></i></a></p>
 <a class="btn" href="https://www.baidu.com" target="_blank" rel="noopener" title="百度"><i class="fa fa-download fa-3x"></i></a>
 <a class="btn" href="https://www.baidu.com" target="_blank" rel="noopener" title="百度"><i class="fa fa-download fa-2x"></i></a>
 <a class="btn" href="https://www.baidu.com" target="_blank" rel="noopener"><i class="fa fa-download"></i>百度 (buggy)</a>
