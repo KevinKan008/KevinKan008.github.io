@@ -16,15 +16,19 @@ MathJax = {
 <script id="MathJax-script" async
   src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 </script>
-<p>在 <code>markdown</code> 文档里使用 <code>mathjax脚本</code>，并加载 <code>physics</code> 宏包</p>
 <figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span></span><br><span class="line">MathJax = &#123;</span><br><span class="line">  loader: &#123;</span><br><span class="line"><span class="actionscript">    load: [<span class="string">'[tex]/physics'</span>]</span></span><br><span class="line">  &#125;,</span><br><span class="line">  tex: &#123;</span><br><span class="line"><span class="actionscript">    packages: &#123;<span class="string">'[+]'</span>: [<span class="string">'physics'</span>]&#125;</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;;</span><br><span class="line"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">id</span>=<span class="string">"MathJax-script"</span> <span class="attr">async</span></span></span><br><span class="line"><span class="tag">  <span class="attr">src</span>=<span class="string">"https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
 <p>Hello <span class="math inline">\(\LaTeX\)</span></p>
-<p>行内公式在两个<code>$ $</code>需要注意，第一个<code>$</code>后面不能有空格，后面的<code>$</code>前面也不能有空格，而行间公式就没有要求，另外用脚本，方程引用好像有问题，还得进一步探索</p>
 <p><span class="math inline">\(\Gamma(n) = (n-1)!\quad \forall n \in \mathbb{N}\)</span></p>
-<p><span class="math inline">\(\bra{\psi} \quad \ket{\psi}\)</span></p>
 <p><span class="math inline">\(\bra{\psi} \quad \ket{\psi} \quad \order{x^2} \quad \comm{A}{B}\)</span></p>
 <p><span class="math display">\[ \Braket{ \phi | \frac{\partial^2}{\partial t^2} | \psi } \]</span></p>
 <p><span class="math display">\[ \laplacian{\Psi} \quad \curl{\vb{a}} \quad \div{\vb{a}} \quad \grad{\Psi} \]</span></p>
+<a id="more"></a>
+<p><strong><code>mathjax3.0+</code> 开始支持 <code>braket</code>、<code>physics</code> 宏包</strong></p>
+<ol type="1">
+<li><p>在 <code>markdown</code> 文档里使用 <code>mathjax脚本</code> 来加载 <code>physics</code> 宏包，这时就不用在最前面的 <code>Front-matter</code> 里设置 <code>mathjax</code> 选项了</p></li>
+<li><p>另外 <code>braket</code> 宏包可以直接使用(前提 <code>mathjax=true</code> )，而不像 <code>physics</code> 宏包；当然 <code>$\bra{\psi} \quad \ket{\psi}$</code> 也可以直接在 <code>physics</code> 宏包里使用</p></li>
+<li><p>最后，行内公式在两个<code>$ $</code>需要注意，第一个<code>$</code>后面不能有空格，后面的<code>$</code>前面也不能有空格，而行间公式就没有要求，另外用脚本，方程引用好像有问题，还得进一步探索</p></li>
+</ol>
 ]]></content>
       <categories>
         <category>LaTeX</category>
@@ -389,8 +393,8 @@ l &amp;= m - n \label{eq5}
         <category>Markdown</category>
       </categories>
       <tags>
-        <tag>Hexo</tag>
         <tag>Markdown</tag>
+        <tag>Hexo</tag>
       </tags>
   </entry>
 </search>
