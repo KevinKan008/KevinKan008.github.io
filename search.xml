@@ -1,6 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>在md里面用脚本加载physics宏包</title>
+    <url>/59b5be49/</url>
+    <content><![CDATA[<script>
+MathJax = {
+  loader: {
+    load: ['[tex]/physics']
+  },
+  tex: {
+    packages: {'[+]': ['physics']}
+  }
+};
+</script>
+<script id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+<h2 id="在-markdown-文档里使用-mathjax脚本并加载-physics-宏包">在 <code>markdown</code> 文档里使用 <code>mathjax脚本</code>，并加载 <code>physics</code> 宏包</h2>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span></span><br><span class="line">MathJax = &#123;</span><br><span class="line">  loader: &#123;</span><br><span class="line"><span class="actionscript">    load: [<span class="string">'[tex]/physics'</span>]</span></span><br><span class="line">  &#125;,</span><br><span class="line">  tex: &#123;</span><br><span class="line"><span class="actionscript">    packages: &#123;<span class="string">'[+]'</span>: [<span class="string">'physics'</span>]&#125;</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;;</span><br><span class="line"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">id</span>=<span class="string">"MathJax-script"</span> <span class="attr">async</span></span></span><br><span class="line"><span class="tag">  <span class="attr">src</span>=<span class="string">"https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>Hello <span class="math inline">\(\LaTeX\)</span></p>
+<p><span class="math inline">\(\Gamma(n) = (n-1)!\quad \forall n \in \mathbb{N}\)</span></p>
+<p><span class="math inline">\(\bra{\psi} \quad \ket{\psi}\)</span></p>
+<p><span class="math inline">\(\bra{\psi} \quad \ket{\psi} \quad \order{x^2} \quad \comm{A}{B}\)</span></p>
+<p><span class="math display">\[ \Braket{ \phi | \frac{\partial^2}{\partial t^2} | \psi } \]</span></p>
+<p><span class="math display">\[ \laplacian{\Psi} \quad \curl{\vb{a}} \quad \div{\vb{a}} \quad \grad{\Psi} \]</span></p>
+]]></content>
+      <categories>
+        <category>LaTeX</category>
+        <category>mathjax</category>
+      </categories>
+      <tags>
+        <tag>Markdown</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>MermaidTest</title>
     <url>/e3afb269/</url>
     <content><![CDATA[<h2 id="usage">Usage</h2>
@@ -267,20 +300,7 @@ E=mc^2
   <entry>
     <title>Hello World &amp; Hexo</title>
     <url>/4a17b156/</url>
-    <content><![CDATA[<script>
-MathJax = {
-  loader: {
-    load: ['[tex]/physics']
-  },
-  tex: {
-    packages: {'[+]': ['physics']}
-  }
-};
-</script>
-<script id="MathJax-script" async
-  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
-</script>
-<h2 id="hello-hexo">Hello Hexo!</h2>
+    <content><![CDATA[<h2 id="hello-hexo">Hello Hexo!</h2>
 <h3 id="font-awesome-特性"><a name="awesome">Font Awesome 特性</a></h3>
 <p><i class="fa fa-google"></i>oole<br> <i class="fa fa-google fa-spin"></i>oole<br> <i class="fa fa-crow"></i> <i class="fa fa-key"></i> normal <span style="color:#FFB90F;"><i class="fa fa-key"></i></span>golden <span style="color:#FFB90F;"><i class="fa fa-key fa-rotate-90"></i> </span>fa-rotate-90 <span style="color:#FFB90F;"><i class="fa fa-key fa-rotate-180"></i></span> fa-rotate-180 <span style="color:#FFB90F;"><i class="fa fa-key fa-rotate-270"></i></span> fa-rotate-270 <span style="color:#FFB90F;"><i class="fa fa-key fa-flip-horizontal"></i></span> fa-flip-horizontal <span style="color:#FFB90F;"><i class="fa fa-key fa-flip-vertical"></i></span> fa-flip-vertical</p>
 <p><span style="color: Tomato;"> <i class="fa fa-thumb-tack fa-fw"></i>置顶</span></p>
@@ -320,18 +340,11 @@ MathJax = {
 <a href="/c6731e3b/" title="use a &lt;b&gt;bold&lt;&#x2F;b&gt; false title">use a <b>bold</b> false title</a>
 <a href="/c6731e3b/" title="&lt;span style&#x3D;&quot;color:red&quot;&gt;use a &lt;b&gt;bold&lt;&#x2F;b&gt; false title&lt;&#x2F;span&gt;"><span style="color:red">use a <b>bold</b> false title</span></a>
 <a href="/c6731e3b/" title="use a &lt;b&gt;bold&lt;&#x2F;b&gt; and &lt;span style&#x3D;&quot;color: blue&quot;&gt; false title&lt;&#x2F;span&gt;">use a <b>bold</b> and <span style="color: blue"> false title</span></a>
-<p>Hello <span class="math inline">\(\LaTeX\)</span></p>
-<p><span class="math inline">\(\Gamma(n) = (n-1)!\quad \forall n \in \mathbb{N}\)</span></p>
-<p><span class="math inline">\(\bra{\psi} \quad \ket{\psi}\)</span></p>
-<p><span class="math inline">\(\bra{\psi} \quad \ket{\psi} \quad \order{x^2} \quad \comm{A}{B}\)</span></p>
-<p><span class="math display">\[ \Braket{ \phi | \frac{\partial^2}{\partial t^2} | \psi } \]</span></p>
-<p><span class="math display">\[ \laplacian{\Psi} \quad \curl{\vb{a}} \quad \div{\vb{a}} \quad \grad{\Psi} \]</span></p>
 <img data-src="/images/1.jpg" />
 <center>
 酒井户:smile:
 </center>
 <figure class="highlight tex"><figcaption><span>_/source/main.tex</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="tag">\<span class="name">documentclass</span><span class="string">&#123;article&#125;</span></span></span><br><span class="line"><span class="tag">\<span class="name">usepackage</span><span class="string">&#123;amsmath&#125;</span></span></span><br><span class="line"><span class="tag">\<span class="name">begin</span><span class="string">&#123;document&#125;</span></span></span><br><span class="line">Hello <span class="tag">\<span class="name">LaTeX</span><span class="string">&#123;&#125;</span></span>!</span><br><span class="line"><span class="tag">\<span class="name">(</span></span> E=mc^2 <span class="tag">\<span class="name">)</span></span></span><br><span class="line"><span class="tag">\<span class="name">end</span><span class="string">&#123;document&#125;</span></span></span><br></pre></td></tr></table></figure>
-<p>在 <code>markdown</code> 文档里使用 <code>mathjax脚本</code>，并加载 <code>physics</code> 宏包 <figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span></span><br><span class="line">MathJax = &#123;</span><br><span class="line">  loader: &#123;</span><br><span class="line"><span class="actionscript">    load: [<span class="string">'[tex]/physics'</span>]</span></span><br><span class="line">  &#125;,</span><br><span class="line">  tex: &#123;</span><br><span class="line"><span class="actionscript">    packages: &#123;<span class="string">'[+]'</span>: [<span class="string">'physics'</span>]&#125;</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;;</span><br><span class="line"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">id</span>=<span class="string">"MathJax-script"</span> <span class="attr">async</span></span></span><br><span class="line"><span class="tag">  <span class="attr">src</span>=<span class="string">"https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
 <h3 id="返回前面查看"><a href="#awesome">返回前面查看</a></h3>
 <h2 id="create-a-new-post">Create a new post</h2>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
@@ -371,7 +384,8 @@ l &amp;= m - n \label{eq5}
 <p><span class="math display">\[ x+1\over\sqrt{1-x^2} \tag{i}\label{eq_tag} \]</span> 如果你想要了解更多信息，请访问 <a href="https://docs.mathjax.org/en/latest/input/tex/eqnumbers.html" target="_blank" rel="noopener">MathJax 关于公式编号的官方文档</a>。同时，你也可以阅读 <a href="https://theme-next.org/docs/third-party-services/math-equations" target="_blank" rel="noopener">这篇文档</a> 来获取更多细节信息。</p>
 ]]></content>
       <categories>
-        <category>Hexo</category>
+        <category>NexT</category>
+        <category>Markdown</category>
       </categories>
       <tags>
         <tag>Hexo</tag>

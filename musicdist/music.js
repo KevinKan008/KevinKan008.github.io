@@ -2,6 +2,9 @@ const ap = new APlayer({
     container: document.getElementById('aplayer'),
     fixed: true,
     autoplay: false,
+    order: 'random',
+    preload: 'auto',
+    mutex: true,
     lrcType: 3,
     audio: [
       {
