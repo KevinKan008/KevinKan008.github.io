@@ -66,7 +66,7 @@ const ap = new APlayer({
       {
         name: "I am You",
         artist: "Kim Taylor",
-        url: "http://m10.music.126.net/20200223010944/a2cc4d5c23e4d9e9bbbab955b8c167b0/ymusic/8e33/74d6/aabc/f233a6d51cb638f6400b35c33b6ce9b9.mp3",
+        url: "https://sharefs.yun.kugou.com/202002230228/fabf81d471190913ff52f3a665ccd871/G135/M05/0D/09/xw0DAFuIN6SAVrj3AEN0vhouEpM238.mp3",
         cover: "/medias/music/iamy.jpg",
         lrc: "/medias/music/iamy.lrc",
       },
