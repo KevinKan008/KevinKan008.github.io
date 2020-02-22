@@ -51,7 +51,7 @@ const ap = new APlayer({
       },
       {
         name: "大风吹",
-        artist: "草东没有派",
+        artist: "草东没有派对",
         url: "https://sharefs.yun.kugou.com/202002230036/d814c73b4aa7eba4d9d00859ae135b94/G062/M07/1E/0F/3oYBAFcooOyAFDD6ADmo_VFnHZA244.mp3",
         cover: "/medias/music/dafc.jpg",
         lrc: "/medias/music/dafc.lrc",
