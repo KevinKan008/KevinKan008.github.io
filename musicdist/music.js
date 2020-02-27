@@ -66,7 +66,7 @@ const ap = new APlayer({
       {
         name: "异度侵入片头曲",
         artist: "Sou",
-        url: "https://sharefs.yun.kugou.com/202002230119/c355e85c84e7b62c63c3b7013ff986dc/G191/M09/05/0B/X4cBAF4Sj0iAcecWADWuVe9xtII389.mp3",
+        url: "/medias/music/yiduSou.mp3",
         cover: "/medias/music/yiduSou.jpg",
         lrc: "/medias/music/yiduSou.lrc",
       },
