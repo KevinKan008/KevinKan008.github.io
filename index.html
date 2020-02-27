@@ -374,7 +374,7 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2020-02-28 00:11:13 / 修改时间：02:30:08" itemprop="dateCreated datePublished" datetime="2020-02-28T00:11:13+08:00">2020-02-28</time>
+              <time title="创建时间：2020-02-28 00:11:13 / 修改时间：02:37:06" itemprop="dateCreated datePublished" datetime="2020-02-28T00:11:13+08:00">2020-02-28</time>
             </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -408,7 +408,7 @@
                 <i class="fa fa-file-word-o"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>2.1k</span>
+              <span>2k</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
@@ -429,50 +429,14 @@
       
           <h2 id="youtube-dlyou-get的安装">youtube-dl、you-get的安装</h2>
 <p>在安装这两个命令行下载工具前需要先安装Python和ffmpeg <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">pip3 install youtube-dl</span><br><span class="line">pip3 install you-get</span><br></pre></td></tr></table></figure> 检验安装是否成功 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">youtube-dl --version</span><br><span class="line">you-get --version</span><br></pre></td></tr></table></figure></p>
-<h2 id="install-python-on-windows">Install Python on Windows</h2>
-<p><a href="https://www.wikihow.com/Install-Python-on-Windows" target="_blank" rel="noopener">Python安装的详细图文教程可参看这里</a></p>
-<h2 id="installing-ffmpeg-in-windows">Installing FFmpeg in Windows</h2>
-<p><a href="https://www.wikihow.com/Install-FFmpeg-on-Windows" target="_blank" rel="noopener">详细的安装图文教程可参考这里</a></p>
-<p><a href="https://ffmpeg.zeranoe.com/builds/" target="_blank" rel="noopener">FFmpeg下载地址</a></p>
-<img data-src="/images/ffmpeg-download.png" />
-<center>
-<font size="5" color="red">FFmpeg下载页面</font>
-</center>
-<p>根据自己的操作系统选择下载最新的64位或32位静态程序版本： 下载的Win10 64位静态程序版本名称大致长这样：<code>ffmpeg-20200225-36451f9-win64-static.zip</code></p>
-<p>解压下载好的FFmpeg程序压缩包,将其目录下的bin子目录添加至系统环境变量</p>
-<img data-src="/images/ffmpeg-dir.png" />
-<center>
-<font size="5" color="red">FFmpeg程序包解压后的文件结构</font>
-</center>
-<p>然后在命令行窗口输入以下命令并执行，不报错说明安装成功 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ffmpeg -version</span><br></pre></td></tr></table></figure></p>
-<h2 id="youtube-dlyou-get的使用">youtube-dl、you-get的使用</h2>
-<p><a href="https://github.com/ytdl-org/youtube-dl" target="_blank" rel="noopener">youtube-dl：download videos from youtube.com or other video platforms</a></p>
-<p><a href="https://github.com/soimort/you-get/wiki/%E4%B8%AD%E6%96%87%E8%AF%B4%E6%98%8E" target="_blank" rel="noopener">you-get wiki 中文说明</a></p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">youtube-dl [OPTIONS] URL [URL...]</span><br></pre></td></tr></table></figure>
-<p>查看视频的信息 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">youtube-dl -F your_video_url</span><br><span class="line">you-get -i your_video_url</span><br></pre></td></tr></table></figure></p>
-<p>下载 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">you-get --itag=18 <span class="string">'https://www.youtube.com/watch?v=jNQXAC9IVRw'</span></span><br></pre></td></tr></table></figure> 下载播放列表 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">youtube-dl -i -f mp4 --yes-playlist video_playlist_url</span><br><span class="line">youtube-dl -i -f mp4 --playlist-start 5 video_playlist_url</span><br></pre></td></tr></table></figure></p>
-<h2 id="ffmpeg的使用">ffmpeg的使用</h2>
-<p>将ts视频文件转为mp4单文件 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ffmpeg -i <span class="string">"la72.ts"</span> -vcodec copy -acodec copy <span class="string">"ola72.mp4"</span></span><br></pre></td></tr></table></figure></p>
-<p>多个转换，批处理文件 <figure class="highlight bat"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> <span class="variable">%%a</span> <span class="keyword">in</span> ("*.ts") <span class="keyword">do</span> ffmpeg -i "<span class="variable">%%a</span>" -vcodec <span class="built_in">copy</span> -acodec <span class="built_in">copy</span> "newfiles\<span class="variable">%%~</span>na.mp4"</span><br><span class="line"><span class="built_in">pause</span></span><br></pre></td></tr></table></figure></p>
-<p>将srt字幕内嵌到mp4文件中</p>
-<p>单个视频 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ffmpeg -i <span class="string">"w55.mp4"</span> -vf <span class="string">"subtitles='w55.srt:force_style=FontName=Frutiger Neue LT W1G,Fontsize=20,PrimaryColour=&amp;H000000ff&amp;'"</span> <span class="string">"ow55.mp4"</span></span><br></pre></td></tr></table></figure></p>
-<figure class="highlight bat"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> <span class="variable">%%a</span> <span class="keyword">in</span> ("*.mp4") <span class="keyword">do</span> ffmpeg -i "<span class="variable">%%a</span>" -vf "subtitles='<span class="variable">%%~</span>na.en.srt:force_style=FontName=Frutiger Neue LT W1G,Fontsize=<span class="number">20</span>,PrimaryColour=&amp;H000000ff&amp;'" "merge\<span class="variable">%%~</span>na.mp4"</span><br><span class="line"><span class="built_in">pause</span></span><br></pre></td></tr></table></figure>
-<h2 id="bat批处理文件">bat批处理文件</h2>
-<p>如果中文乱码，将<code>bat</code>文件编码另存为<code>ANSI</code>编码</p>
-<p>替换当前目录和字目录文件的字符</p>
-<figure class="highlight bat"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line">@<span class="built_in">echo</span> off</span><br><span class="line"></span><br><span class="line"><span class="built_in">set</span> /p str1= 请输入要替换的文件(文件夹)名字符串（可替换空格）：</span><br><span class="line"></span><br><span class="line"><span class="built_in">set</span> /p str2= 请输入替换后的文件(文件夹)名字符串（去除则直接回车）：</span><br><span class="line"></span><br><span class="line"><span class="built_in">echo</span>.</span><br><span class="line"></span><br><span class="line"><span class="built_in">echo</span> 正在修改文件(夹)名中，请稍候……</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> /f "delims=" <span class="variable">%%a</span> <span class="keyword">in</span> ('<span class="built_in">dir</span> /s /b ^|sort /+<span class="number">65535</span>') <span class="keyword">do</span> (</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> "<span class="variable">%%~</span>nxa" <span class="keyword">neq</span> "%~nx0" (</span><br><span class="line"></span><br><span class="line"><span class="built_in">set</span> "file=<span class="variable">%%a</span>"</span><br><span class="line"></span><br><span class="line"><span class="built_in">set</span> "name=<span class="variable">%%~</span>na"</span><br><span class="line"></span><br><span class="line"><span class="built_in">set</span> "extension=<span class="variable">%%~</span>xa"</span><br><span class="line"></span><br><span class="line"><span class="keyword">call</span> <span class="built_in">set</span> "name=<span class="variable">%%n</span>ame:<span class="variable">%str1%</span>=<span class="variable">%str2%</span><span class="variable">%%"</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">setlocal</span> enabledelayedexpansion</span><br><span class="line"></span><br><span class="line"><span class="built_in">ren</span> "<span class="variable">!file!</span>" "<span class="variable">!name!</span><span class="variable">!extension!</span>" <span class="number">2</span>&gt;<span class="built_in">nul</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">endlocal</span></span><br><span class="line"></span><br><span class="line">)</span><br><span class="line"></span><br><span class="line">)</span><br><span class="line"></span><br><span class="line"><span class="keyword">exit</span></span><br></pre></td></tr></table></figure>
-<p>删除当前目录和子目录特定文件格式的前N个字符</p>
-<figure class="highlight bat"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">@<span class="built_in">echo</span> off</span><br><span class="line"><span class="built_in">setlocal</span> enabledelayedexpansion</span><br><span class="line"> </span><br><span class="line">::批量去掉文件名前N个字符，如果有文件夹会搜索文件夹下的每个文件进行修改</span><br><span class="line"><span class="built_in">set</span> /p <span class="built_in">format</span>=请输入需要操作的文件格式：</span><br><span class="line"><span class="built_in">set</span> /p deletenum=请输入需要删除文件名前多少个字符：</span><br><span class="line"><span class="keyword">for</span> /r <span class="variable">%%i</span> <span class="keyword">in</span> (.) <span class="keyword">do</span> (</span><br><span class="line">    <span class="keyword">for</span> /f "delims=" <span class="variable">%%a</span> <span class="keyword">in</span> (' <span class="built_in">dir</span> /b "<span class="variable">%%i</span>\*.<span class="variable">%format%</span>" <span class="number">2</span>^&gt;<span class="built_in">nul</span> ') <span class="keyword">do</span> (</span><br><span class="line">		<span class="built_in">set</span> "t=<span class="variable">%%~</span>na"</span><br><span class="line">        <span class="built_in">ren</span> "<span class="variable">%%i</span>\<span class="variable">%%a</span>" "<span class="variable">!t:~%deletenum%!</span><span class="variable">%%~</span>xa"</span><br><span class="line">    )</span><br><span class="line">)</span><br><span class="line"> </span><br><span class="line"><span class="built_in">pause</span></span><br></pre></td></tr></table></figure>
-<p>将当前目录和子目录（不限层级）下的所有文件列出，然后可以对其复制或者剪切操作</p>
-<img data-src="/images/before-search.png" />
-<center>
-<font size="5" color="red">操作前</font>
-</center>
-<img data-src="/images/after-search.png" />
-<center>
-<font size="5" color="red">操作后</font>
-</center>
-
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/e33aadbd/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
