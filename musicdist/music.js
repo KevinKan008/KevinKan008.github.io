@@ -15,6 +15,13 @@ const ap = new APlayer({
         lrc: "/medias/music/qingt.lrc",
       },
       {
+        name: "青鸟",
+        artist: "生物股长",
+        url: "/medias/music/qingniao.mp3",
+        cover: "/medias/music/qingniao.jpg",
+        lrc: "/medias/music/qingniao.lrc",
+      },
+      {
         name: "everything i wanted",
         artist: "Billie Eilish",
         url: "/medias/music/everythingiwanted.mp3",
@@ -29,18 +36,11 @@ const ap = new APlayer({
         lrc: "/medias/music/OtherSide.lrc",
       },
       {
-        name: "青鸟",
-        artist: "生物股长",
-        url: "/medias/music/qingniao.mp3",
-        cover: "/medias/music/qingniao.jpg",
-        lrc: "/medias/music/qingniao.lrc",
-      },
-      {
-        name: "山海",
-        artist: "草东没有派对",
-        url: "/medias/music/shanhai.mp3",
-        cover: "/medias/music/shanhai.jpg",
-        lrc: "/medias/music/shanhai.lrc",
+        name: "以父之名",
+        artist: "周杰伦",
+        url: "/medias/music/yifuzm.mp3",
+        cover: "/medias/music/yifuzm.jpg",
+        lrc: "/medias/music/yifuzm.lrc",
       },
       {
         name: "Something Just Like This",
@@ -57,18 +57,18 @@ const ap = new APlayer({
         lrc: "/medias/music/guang.lrc",
       },
       {
+        name: "山海",
+        artist: "草东没有派对",
+        url: "/medias/music/shanhai.mp3",
+        cover: "/medias/music/shanhai.jpg",
+        lrc: "/medias/music/shanhai.lrc",
+      },
+      {
         name: "异度侵入片头曲",
         artist: "Sou",
         url: "https://sharefs.yun.kugou.com/202002230119/c355e85c84e7b62c63c3b7013ff986dc/G191/M09/05/0B/X4cBAF4Sj0iAcecWADWuVe9xtII389.mp3",
         cover: "/medias/music/yiduSou.jpg",
         lrc: "/medias/music/yiduSou.lrc",
-      },
-      {
-        name: "以父之名",
-        artist: "周杰伦",
-        url: "/medias/music/yifuzm.mp3",
-        cover: "/medias/music/yifuzm.jpg",
-        lrc: "/medias/music/yifuzm.lrc",
       },
       {
         name: "一路向北 (Live)",
