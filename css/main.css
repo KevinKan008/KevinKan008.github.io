@@ -1283,7 +1283,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #ff4657;
+  background: #22a775;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -2534,7 +2534,7 @@ hr {
   text-align: center;
 }
 .posts-expand .post-body img {
-  margin-left: 0;
+  margin: 0 auto;
 }
 .posts-expand .post-tags {
   text-align: left;
@@ -2630,6 +2630,21 @@ hr {
 }
 .bilibili_tv:before {
   content: "\e60f";
+}
+@font-face {
+  font-family: "iconfont";
+  src: url("iconfont.eot?t=1583668254193"); /* IE9 */
+  src: url("iconfont.eot?t=1583668254193#iefix") format('embedded-opentype'), url("data:application/x-font-woff2;charset=utf-8;base64,d09GMgABAAAAAAKQAAsAAAAABigAAAJDAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHEIGVgCCcAo0VwE2AiQDCAsGAAQgBYRtBy8bfAURBZzJvjzgyfDm1QxUIVjH7/P6bwPG8DnahPihaoLzOYJorayemb2fBw4AKZZAChg0oAVyMT6ahMkLE5JhRXpziGeiARc04NeXam0g53EjzP2f2mFf6ICyMM8T7/I/7v7IvlzX8xqXqIAFLGB94t7pn0AfZL67PLc9aazJ/6IAA8u6gPbGKLIySbxh7IIX+JhAjxmWiU1btu5VFfaqQFy9dOGUWkgoCitXodNwsMyJFxo1PUzv8Tz6fvyyPCpJk9ldO89vPmvd1+pU5QctRwNCkoCON8hYhkLsbSxslwXjsp5CMYdjtQdfa9sGfnFUj2B/nd3aB6ZB7TPpPP2jtiZQkuEeTJw0gdSVb9/Yd+CMq3L9wL4Zo35of9l7Tr/+/fyQ86wD7Vj+kwkEo/FqjcH/1wr48Og/I4q1Y8WwEHX9YPAfRhVQuMEupIKO1kDSM2llQo8etFBkxJepzvEnrYRq/KlDXaZnyKp5ZGGXodFrJTqqcS16LNUe7zWK7UXpxhIvgDDkjWTAO2RDPmRhv2hM8EPHUOzRY390Ya8FERVGLejAPCHaaSQ3ICpuP6C/9przhoi/IK8xDWVWlMstjshLbFlvvhIhIJ4GaMBz2PcTzDwltJIFkbnOc2p6U2anYaNsxJAmkAOMJxBZkxEFg4WqfP4AeVc9jTsUdfULxFZxfFDKFAPI1joOUjzKK6sbryIEAYRNBqAB81CvNwFz87wEWSITJuRmtdzpR0Ot2fb24QdqWA+2K4UzI2tOWbqOmw0AAAA=") format('woff2'), url("iconfont.woff?t=1583668254193") format('woff'), url("iconfont.ttf?t=1583668254193") format('truetype'), url("iconfont.svg?t=1583668254193#iconfont") format('svg'); /* iOS 4.1- */
+}
+.fa-custom {
+  font-family: "iconfont" !important;
+  font-size: inherit;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.acfun:before {
+  content: "\e608";
 }
 #jrsc {
   font-style: italic;
