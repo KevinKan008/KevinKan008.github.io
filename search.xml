@@ -366,6 +366,7 @@ E=mc^2
     <title>Hello World &amp; Hexo</title>
     <url>/4a17b156/</url>
     <content><![CDATA[<h2 id="hello-hexo">Hello Hexo!</h2>
+<p>尝试升级next主题</p>
 <h3 id="font-awesome-特性"><a name="awesome">Font Awesome 特性</a></h3>
 <p><i class="fa fa-google"></i>oole<br> <i class="fa fa-google fa-spin"></i>oole<br> <i class="fa fa-crow"></i> <i class="fa fa-key"></i> normal <span style="color:#FFB90F;"><i class="fa fa-key"></i></span>golden <span style="color:#FFB90F;"><i class="fa fa-key fa-rotate-90"></i> </span>fa-rotate-90 <span style="color:#FFB90F;"><i class="fa fa-key fa-rotate-180"></i></span> fa-rotate-180 <span style="color:#FFB90F;"><i class="fa fa-key fa-rotate-270"></i></span> fa-rotate-270 <span style="color:#FFB90F;"><i class="fa fa-key fa-flip-horizontal"></i></span> fa-flip-horizontal <span style="color:#FFB90F;"><i class="fa fa-key fa-flip-vertical"></i></span> fa-flip-vertical</p>
 <p><span style="color: Tomato;"> <i class="fa fa-thumb-tack fa-fw"></i>置顶</span></p>
