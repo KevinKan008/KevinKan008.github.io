@@ -237,7 +237,7 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-03-08 21:38:56" itemprop="dateModified" datetime="2020-03-08T21:38:56+08:00">2020-03-08</time>
+                <time title="修改时间：2020-03-08 22:31:25" itemprop="dateModified" datetime="2020-03-08T22:31:25+08:00">2020-03-08</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -278,14 +278,14 @@
                 <i class="fa fa-file-word-o"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>2.7k</span>
+              <span>2.8k</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
                 <i class="fa fa-clock-o"></i>
               </span>
                 <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>2 mins.</span>
+              <span>3 mins.</span>
             </span>
 
         </div>
@@ -297,8 +297,11 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h2 id="hello-hexo">Hello Hexo!</h2>
-<p>尝试升级next主题ss <span class="math inline">\(\Gamma(n) = (n-1)!\quad \forall n \in \mathbb{N}\)</span></p>
+          <h2 id="hello-hexo-next">Hello Hexo &amp; NexT!</h2>
+<p>一键四连 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo clean &amp;&amp; hexo g -d &amp;&amp; hexo s</span><br></pre></td></tr></table></figure></p>
+<p>NexT v7.7.2 Support MathJax v3.0</p>
+<p>妙啊，支持新增的 <code>braket、physics</code> 宏包了</p>
+<p><span class="math inline">\(\Gamma(n) = (n-1)!\quad \forall n \in \mathbb{N}\)</span></p>
 <p><span class="math inline">\(\bra{\psi} \quad \ket{\psi}\)</span></p>
 <p><span class="math inline">\(\order{x^2} \quad \comm{A}{B}\)</span></p>
 <p><span class="math display">\[ \Braket{ \phi | \frac{\partial^2}{\partial t^2} | \psi } \]</span></p>
@@ -407,7 +410,7 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2020-03-08 20:42:01 / 修改时间：21:39:52" itemprop="dateCreated datePublished" datetime="2020-03-08T20:42:01+08:00">2020-03-08</time>
+              <time title="创建时间：2020-03-08 20:42:01 / 修改时间：22:25:27" itemprop="dateCreated datePublished" datetime="2020-03-08T20:42:01+08:00">2020-03-08</time>
             </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -468,23 +471,21 @@
 
       
           <h2 id="next-v7.7.2">NexT v7.7.2</h2>
-<p>🌟 New Features Native Dark Mode support 白天不懂夜的黑 <figure class="highlight diff"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="addition">+ darkmode: true</span></span><br></pre></td></tr></table></figure> ⭐ Features Support MathJax v3.0 妙啊，支持新增的 <code>braket、physics</code> 宏包了 Add next_config helper (#1346)</p>
+<p>🌟 New Features</p>
+<p>Native Dark Mode support 白天不懂夜的黑 <figure class="highlight diff"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="addition">+ darkmode: true</span></span><br></pre></td></tr></table></figure> ⭐ Features</p>
+<p>Support MathJax v3.0 妙啊，支持新增的 <code>braket、physics</code> 宏包了</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo clean &amp;&amp; hexo g -d &amp;&amp; hexo s</span><br></pre></td></tr></table></figure>
 <h2 id="升级前的准备">升级前的准备</h2>
 <p><code>NexT</code> 提供了两种方案，这里我选的是第2种：<code>NexT</code> 方式，然后自己手动更新，而不是用 <code>git pull</code></p>
 <p><strong>建议先去阅读<a href="https://github.com/theme-next/hexo-theme-next/blob/master/docs/zh-CN/DATA-FILES.md" target="_blank" rel="noopener">Hexo 数据文件</a></strong></p>
-<p><img data-src="/images/datastr.png" /></p>
-<p>首先去 <code>https://github.com/theme-next/hexo-theme-next/releases</code> 下载主题的源码，解压重新命名为 <code>next</code>，然后复制到博客主题目录下并覆盖之前 <code>next</code> 目录下的相同文件，接着对下面这些地方做修改： ### 点击侧边栏头像返回首页</p>
-<ol type="1">
-<li>找到主题侧边栏配置文件 <code>next/layout/_partials/sidebar/site-overview.swig</code>；</li>
-<li>找到头像配置位置class="site-author-image"；</li>
-<li>设置点击头像跳转，需将对应头像配置修改如下： <figure class="highlight diff"><figcaption><span>site-overview.swig</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="addition">+ &lt;a href="/"&gt;</span></span><br><span class="line">  &lt;img class="site-author-image" itemprop="image" alt="&#123;&#123; author &#125;&#125;"</span><br><span class="line">    src="&#123;&#123; url_for(theme.avatar.url) &#125;&#125;"&gt;</span><br><span class="line"><span class="addition">+ &lt;/a&gt;</span></span><br></pre></td></tr></table></figure></li>
-</ol>
-<h3 id="在侧栏添加背景音乐">在侧栏添加背景音乐</h3>
-<p>前提去 <code>https://github.com/MoePlayer/APlayer</code> 下载 <code>dist</code> 目录并将其放到主题下的 <code>source</code> 文件夹中，这里我将其重命名成了 <code>musicdist</code>，然后在其目录下配置自己的歌单，我的为 <code>music.js</code>，具体配置参数见前面的<code>Github</code> 链接。</p>
-<p>在上面同样的文件最后面添加下面代码 <figure class="highlight diff"><figcaption><span>site-overview.swig</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="addition">+ &lt;link rel="stylesheet" href="/musicdist/APlayer.min.css"&gt;</span></span><br><span class="line"><span class="addition">+ &lt;div id="aplayer"&gt;&lt;/div&gt;</span></span><br><span class="line"><span class="addition">+ &lt;script type="text/javascript" src="/musicdist/APlayer.min.js"&gt;&lt;/script&gt;</span></span><br><span class="line"><span class="addition">+ &lt;script type="text/javascript" src="/musicdist/music.js"&gt;&lt;/script&gt;</span></span><br></pre></td></tr></table></figure></p>
-<h3 id="图片居中">图片居中</h3>
-<p>在 <code>next/source/css/_schemes/Mist/_posts-expanded.styl</code> 中找到 <code>.posts-expand</code> 中的下列内容： <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.post-body</span> <span class="selector-tag">img</span> &#123;</span><br><span class="line">    <span class="attribute">margin-left</span>: <span class="number">0</span>;</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure> 将其修改为： <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.post-body</span> <span class="selector-tag">img</span> &#123;</span><br><span class="line">    <span class="attribute">margin</span>: <span class="number">0</span> auto;</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure></p>
-
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/5351f40c/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
@@ -526,10 +527,16 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              
 
-              <time title="创建时间：2020-02-28 00:11:13 / 修改时间：17:24:56" itemprop="dateCreated datePublished" datetime="2020-02-28T00:11:13+08:00">2020-02-28</time>
+              <time title="创建时间：2020-02-28 00:11:13" itemprop="dateCreated datePublished" datetime="2020-02-28T00:11:13+08:00">2020-02-28</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-03-08 22:24:24" itemprop="dateModified" datetime="2020-03-08T22:24:24+08:00">2020-03-08</time>
+              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
@@ -554,20 +561,25 @@
     </a>
   </span>
   
-  <br>
+  
+    <span class="post-meta-divider">|</span>
+    <span style="color: Tomato;">
+    <i class="fa fa-thumb-tack fa-fw"></i>置顶</span>
+    <span class="post-meta-divider">|</span>
+<br>
             <span class="post-meta-item" title="本文字数">
               <span class="post-meta-item-icon">
                 <i class="fa fa-file-word-o"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>2k</span>
+              <span>3.1k</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
                 <i class="fa fa-clock-o"></i>
               </span>
                 <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>2 mins.</span>
+              <span>3 mins.</span>
             </span>
 
         </div>
@@ -1230,12 +1242,12 @@ MathJax = {
     <span class="post-meta-item-icon">
       <i class="fa fa-area-chart"></i>
     </span>
-    <span title="站点总字数">13k</span>
+    <span title="站点总字数">14k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="站点阅读时长">11 mins.</span>
+    <span title="站点阅读时长">13 mins.</span>
 </div>
   <div class="powered-by">Powered by <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> v4.2.0
   </div>
