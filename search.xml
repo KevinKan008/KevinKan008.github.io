@@ -3,7 +3,7 @@
   <entry>
     <title>公开课搬运相关</title>
     <url>/82d246a9/</url>
-    <content><![CDATA[<p>B站和A站已搬运的视频可去主页查看： <a href="https://space.bilibili.com/34793271" target="_blank" rel="noopener"><i class="fa fa-custom bilibili_tv"></i> 站个人主页</a> <a href="https://www.acfun.cn/u/9085094.aspx" target="_blank" rel="noopener"><i class="fa fa-custom CN_acfuntv"></i>站个人主页</a></p>
+    <content><![CDATA[<p>B站和A站已搬运的视频可去主页查看： <a href="https://space.bilibili.com/34793271" target="_blank" rel="noopener"><i class="fa fa-custom bilibili_tv"></i> 站个人主页</a> <a href="https://www.acfun.cn/u/9085094.aspx" target="_blank" rel="noopener"><i class="fa fa-custom CN_acfuntv"></i> 站个人主页</a></p>
 <p>与这些公开课相关的可以在这篇文章底部留言（不需要登录即可进行评论）</p>
 <a id="more"></a>
 <p><img data-src="/images/bmooc.png" /></p>
@@ -445,8 +445,8 @@ E=mc^2
         <category>Markdown</category>
       </categories>
       <tags>
-        <tag>Typora</tag>
         <tag>Markdown</tag>
+        <tag>Typora</tag>
       </tags>
   </entry>
   <entry>
@@ -456,11 +456,9 @@ E=mc^2
 <p>一键四连 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo clean &amp;&amp; hexo g -d &amp;&amp; hexo s -o</span><br></pre></td></tr></table></figure></p>
 <p>NexT v7.7.2 Support MathJax v3.0</p>
 <p>妙啊，支持新增的 <code>braket、physics</code> 宏包了</p>
-<p><span class="math inline">\(\Gamma(n) = (n-1)!\quad \forall n \in \mathbb{N}\)</span></p>
-<p><span class="math inline">\(\bra{\psi} \quad \ket{\psi}\)</span></p>
-<p><span class="math inline">\(\order{x^2} \quad \comm{A}{B}\)</span></p>
+<p><span class="math inline">\(\Gamma(n) = (n-1)!\quad \forall n \in \mathbb{N} \quad \bra{\psi} \quad \ket{\psi}\)</span></p>
+<p><span class="math inline">\(\order{x^2} \quad \comm{A}{B} \quad \laplacian{\Psi} \quad \curl{\vb{a}} \quad \div{\vb{a}} \quad \grad{\Psi}\)</span></p>
 <p><span class="math display">\[ \Braket{ \phi | \frac{\partial^2}{\partial t^2} | \psi } \]</span></p>
-<p><span class="math display">\[ \laplacian{\Psi} \quad \curl{\vb{a}} \quad \div{\vb{a}} \quad \grad{\Psi} \]</span></p>
 <a id="more"></a>
 <h3 id="font-awesome-特性"><a name="awesome">Font Awesome 特性</a></h3>
 <p><i class="fa fa-google"></i>oole<br> <i class="fa fa-google fa-spin"></i>oole<br> <i class="fa fa-crow"></i> <i class="fa fa-key"></i> normal <span style="color:#FFB90F;"><i class="fa fa-key"></i></span>golden <span style="color:#FFB90F;"><i class="fa fa-key fa-rotate-90"></i> </span>fa-rotate-90 <span style="color:#FFB90F;"><i class="fa fa-key fa-rotate-180"></i></span> fa-rotate-180 <span style="color:#FFB90F;"><i class="fa fa-key fa-rotate-270"></i></span> fa-rotate-270 <span style="color:#FFB90F;"><i class="fa fa-key fa-flip-horizontal"></i></span> fa-flip-horizontal <span style="color:#FFB90F;"><i class="fa fa-key fa-flip-vertical"></i></span> fa-flip-vertical</p>
@@ -580,8 +578,8 @@ l &amp;= m - n \label{eq5}
         <category>Markdown</category>
       </categories>
       <tags>
-        <tag>Markdown</tag>
         <tag>Hexo</tag>
+        <tag>Markdown</tag>
       </tags>
   </entry>
 </search>
