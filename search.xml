@@ -3,7 +3,8 @@
   <entry>
     <title>公开课搬运相关</title>
     <url>/82d246a9/</url>
-    <content><![CDATA[<p>B站和A站已搬运的视频可去主页查看： <a href="https://space.bilibili.com/34793271" target="_blank" rel="noopener"><i class="fa fa-custom bilibili_tv"></i> 站个人主页</a> <a href="https://www.acfun.cn/u/9085094.aspx" target="_blank" rel="noopener"><i class="fa fa-custom CN_acfuntv"></i> 站个人主页</a></p>
+    <content><![CDATA[<p>B站和A站已搬运的视频可去主页查看：</p>
+<p><a href="https://space.bilibili.com/34793271" target="_blank" rel="noopener"><i class="fa fa-custom bilibili_tv"></i> 站个人主页</a> <a href="https://www.acfun.cn/u/9085094.aspx" target="_blank" rel="noopener"><i class="fa fa-custom CN_acfuntv"></i> 站个人主页</a></p>
 <p>与这些公开课相关的可以在这篇文章底部留言（不需要登录即可进行评论）</p>
 <a id="more"></a>
 <p><img data-src="/images/bmooc.png" /></p>
@@ -68,7 +69,8 @@
 <center>
 <font size="4" color="red">FFmpeg下载页面</font>
 </center>
-<p>根据自己的操作系统选择下载最新的64位或32位静态程序版本： 下载的Win10 64位静态程序版本名称大致长这样：<code>ffmpeg-20200225-36451f9-win64-static.zip</code></p>
+<p>根据自己的操作系统选择下载最新的64位或32位静态程序版本： 下载的Win10 64位静态程序版本名称大致长这样：</p>
+<p><code>ffmpeg-20200225-36451f9-win64-static.zip</code></p>
 <p>解压下载好的FFmpeg程序压缩包,将其目录下的bin子目录添加至系统环境变量</p>
 <img data-src="/images/ffmpeg-dir.png" />
 <center>
@@ -445,8 +447,8 @@ E=mc^2
         <category>Markdown</category>
       </categories>
       <tags>
-        <tag>Markdown</tag>
         <tag>Typora</tag>
+        <tag>Markdown</tag>
       </tags>
   </entry>
   <entry>
@@ -578,8 +580,8 @@ l &amp;= m - n \label{eq5}
         <category>Markdown</category>
       </categories>
       <tags>
-        <tag>Hexo</tag>
         <tag>Markdown</tag>
+        <tag>Hexo</tag>
       </tags>
   </entry>
 </search>
