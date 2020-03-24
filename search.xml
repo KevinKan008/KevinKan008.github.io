@@ -7,8 +7,8 @@
 <p><a href="https://space.bilibili.com/34793271" target="_blank" rel="noopener"><i class="fa fa-custom bilibili_tv"></i> 站个人主页</a>    <a href="https://www.acfun.cn/u/9085094.aspx" target="_blank" rel="noopener"><i class="fa fa-custom CN_acfuntv"></i> 站个人主页</a></p>
 <p>与这些公开课相关的可以在这篇文章底部留言（不需要登录即可进行评论）</p>
 <a id="more"></a>
-<p><img data-src="/images/bmooc.png" /></p>
-<p><img data-src="/images/amooc.png" /></p>
+<p><img src="/images/bmooc.png" /></p>
+<p><img src="/images/amooc.png" /></p>
 ]]></content>
       <categories>
         <category>mooc</category>
@@ -31,7 +31,7 @@
 <p><code>NexT</code> 提供了两种方案，这里我选的是第2种：<code>NexT</code> 方式，然后自己手动更新，而不是用 <code>git pull</code></p>
 <p><strong>建议先去阅读<a href="https://github.com/theme-next/hexo-theme-next/blob/master/docs/zh-CN/DATA-FILES.md" target="_blank" rel="noopener">Hexo 数据文件</a></strong></p>
 <a id="more"></a>
-<p><img data-src="/images/datastr.png" /></p>
+<p><img src="/images/datastr.png" /></p>
 <p>首先去 <code>https://github.com/theme-next/hexo-theme-next/releases</code> 下载主题的源码，解压重新命名为 <code>next</code>，然后复制到博客主题目录下并覆盖之前 <code>next</code> 目录下的相同文件，接着对下面这些地方做修改：</p>
 <h3 id="点击侧边栏头像返回首页">点击侧边栏头像返回首页</h3>
 <ol type="1">
@@ -65,14 +65,14 @@
 <h2 id="installing-ffmpeg-in-windows">Installing FFmpeg in Windows</h2>
 <p><a href="https://www.wikihow.com/Install-FFmpeg-on-Windows" target="_blank" rel="noopener">详细的安装图文教程可参考这里</a></p>
 <p><a href="https://ffmpeg.zeranoe.com/builds/" target="_blank" rel="noopener">FFmpeg下载地址</a></p>
-<img data-src="/images/ffmpeg-download.png" />
+<img src="/images/ffmpeg-download.png" />
 <center>
 <font size="4" color="red">FFmpeg下载页面</font>
 </center>
 <p>根据自己的操作系统选择下载最新的64位或32位静态程序版本： 下载的Win10 64位静态程序版本名称大致长这样：</p>
 <p><code>ffmpeg-20200225-36451f9-win64-static.zip</code></p>
 <p>解压下载好的FFmpeg程序压缩包,将其目录下的bin子目录添加至系统环境变量</p>
-<img data-src="/images/ffmpeg-dir.png" />
+<img src="/images/ffmpeg-dir.png" />
 <center>
 <font size="4" color="red">FFmpeg程序包解压后的文件结构</font>
 </center>
@@ -84,7 +84,7 @@
 <p>查看视频的信息 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">youtube-dl -F <span class="string">"your_video_url"</span></span><br><span class="line">you-get -i <span class="string">"your_video_url"</span></span><br></pre></td></tr></table></figure> 下载 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">youtube-dl <span class="string">"your_video_url"</span></span><br><span class="line">you-get <span class="string">"your_video_url"</span></span><br></pre></td></tr></table></figure></p>
 <p><strong>下载播放列表</strong>（推荐用 <code>youtube-dl</code>）</p>
 <p>貌似会自动识别列表，可以不用加 <code>--yes-playlist</code> 选项 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">youtube-dl -f <span class="string">"bestvideo+bestaudio[ext=m4a]/bestvideo+bestaudio/best"</span> --merge-output-format mp4 --yes-playlist <span class="string">"playlist_url"</span></span><br></pre></td></tr></table></figure> 从播放列表的第5个视频开始下载 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">youtube-dl -f <span class="string">"bestvideo+bestaudio[ext=m4a]/bestvideo+bestaudio/best"</span> --merge-output-format mp4 --playlist-start=5 <span class="string">"playlist_url"</span></span><br></pre></td></tr></table></figure> 从播放列表里面选择性下载 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">youtube-dl -f <span class="string">"bestvideo+bestaudio[ext=m4a]/bestvideo+bestaudio/best"</span> --merge-output-format mp4 --playlist-item=3,6,9-12 <span class="string">"playlist_url"</span></span><br></pre></td></tr></table></figure> 将字幕软嵌到视频里并获得高质量的MP4格式（需要特定播放器，这些视频上传b站貌似看不到字幕） <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">youtube-dl -f <span class="string">"bestvideo+bestaudio[ext=m4a]/bestvideo+bestaudio/best"</span> --merge-output-format mp4 --write-sub --sub-lang=en --convert-subs=ass --playlist-item=8,9 --embed-subs <span class="string">"playlist_url"</span></span><br></pre></td></tr></table></figure></p>
-列出视频对应的所有字幕（自动字幕、上传字幕） List all available subtitles for the video <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">youtube-dl --list-subs <span class="string">"video_url"</span></span><br></pre></td></tr></table></figure> 例如： <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">youtube-dl --list-subs <span class="string">"https://youtu.be/WUvTyaaNkzM"</span></span><br></pre></td></tr></table></figure> <img data-src="/images/yousrt.png" />
+列出视频对应的所有字幕（自动字幕、上传字幕） List all available subtitles for the video <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">youtube-dl --list-subs <span class="string">"video_url"</span></span><br></pre></td></tr></table></figure> 例如： <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">youtube-dl --list-subs <span class="string">"https://youtu.be/WUvTyaaNkzM"</span></span><br></pre></td></tr></table></figure> <img src="/images/yousrt.png" />
 <center>
 <font size="4" color="red">前面为自动字幕，最后面的几个为上传字幕，默认格式为<code>vtt</code></font>
 </center>
@@ -128,11 +128,11 @@
 <p>将<code>[]</code>替换成你需要的特殊字符： <figure class="highlight bat"><table><tr><td class="code"><pre><span class="line">@<span class="built_in">echo</span> off</span><br><span class="line"><span class="keyword">for</span> /f "tokens=<span class="number">1</span>,<span class="number">2</span>* delims=-" <span class="variable">%%a</span> <span class="keyword">in</span> ('<span class="built_in">dir</span> /a-d/b') <span class="keyword">do</span> <span class="keyword">if</span> <span class="keyword">exist</span> "<span class="variable">%%~</span>a-<span class="variable">%%~</span>b" <span class="built_in">ren</span> "<span class="variable">%%~</span>a-<span class="variable">%%~</span>b" "<span class="variable">%%~</span>a<span class="variable">%%~</span>xb"</span><br><span class="line"><span class="built_in">pause</span></span><br></pre></td></tr></table></figure> 示例(对含有两个特殊字符无效)： <figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-tag">abc-wee123</span><span class="selector-class">.txt</span></span><br><span class="line"><span class="selector-tag">sddf-tthh</span><span class="selector-class">.txt</span></span><br><span class="line"><span class="selector-tag">qaq-dff-ghh</span><span class="selector-class">.txt</span></span><br></pre></td></tr></table></figure> 将变成 <figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-tag">abc</span><span class="selector-class">.txt</span></span><br><span class="line"><span class="selector-tag">sddf</span><span class="selector-class">.txt</span></span><br><span class="line"><span class="selector-tag">qaq-dff-ghh</span><span class="selector-class">.txt</span></span><br></pre></td></tr></table></figure></p>
 <h3 id="将当前目录和子目录不限层级下的所有文件列出">将当前目录和子目录（不限层级）下的所有文件列出</h3>
 <p><strong>然后可以对其复制或者剪切操作</strong></p>
-<img data-src="/images/before-search.png" />
+<img src="/images/before-search.png" />
 <center>
 <font size="4" color="red">操作前</font>
 </center>
-<img data-src="/images/after-search.png" />
+<img src="/images/after-search.png" />
 <center>
 <font size="4" color="red">操作后</font>
 </center>
@@ -327,7 +327,7 @@ Add another diagram to demo page    : 48h
   <entry>
     <title>MARKDOWN 语法说明</title>
     <url>/da891ef6/</url>
-    <content><![CDATA[<h2 id="常见hh样式">常见hh样式 🚀</h2>
+    <content><![CDATA[<h2 id="常见gg样式">常见gg样式 🚀</h2>
 In the
 <head>
 <p>of your HTML, include</p>
@@ -390,7 +390,7 @@ U \ar@/_/[ddr]_y \ar@{.&gt;}[dr]|{\langle x,y \rangle} \ar@/^/[drr]^x \\
           </blockquote>
 <p><span style="color:red">this text is red</span></p>
 <a id="more"></a>
-<img data-src="/images/lion.png" />
+<img src="/images/lion.png" />
 <center>
 TeX 吉祥物
 </center>
@@ -576,7 +576,7 @@ E=mc^2
 <p><a href="/4a17b156#Start">hello-world/#Start</a></p>
 <p><a href="/c6731e3b#Quote">hello-world/#Start</a></p>
 <figure>
-<img data-src="/images/1.jpg" alt="hello-world/#Start" /><figcaption>hello-world/#Start</figcaption>
+<img src="/images/1.jpg" alt="hello-world/#Start" /><figcaption>hello-world/#Start</figcaption>
 </figure>
 <p><a href="/images/1.jpg">hello-world/#Start</a></p>
 <p><a href="#Start">hello-world/#Start</a></p>
@@ -589,7 +589,7 @@ E=mc^2
 <a href="/c6731e3b/" title="use a &lt;b&gt;bold&lt;&#x2F;b&gt; false title">use a <b>bold</b> false title</a>
 <a href="/c6731e3b/" title="&lt;span style&#x3D;&quot;color:red&quot;&gt;use a &lt;b&gt;bold&lt;&#x2F;b&gt; false title&lt;&#x2F;span&gt;"><span style="color:red">use a <b>bold</b> false title</span></a>
 <a href="/c6731e3b/" title="use a &lt;b&gt;bold&lt;&#x2F;b&gt; and &lt;span style&#x3D;&quot;color: blue&quot;&gt; false title&lt;&#x2F;span&gt;">use a <b>bold</b> and <span style="color: blue"> false title</span></a>
-<img data-src="/images/1.jpg" />
+<img src="/images/1.jpg" />
 <center>
 酒井户:smile:
 </center>
