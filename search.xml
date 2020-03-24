@@ -347,7 +347,6 @@ Then in the
 <p><span class="math display">\[ \require{physics} \Braket{ \phi | \frac{\partial^2}{\partial t^2} | \psi } \]</span></p>
 <p><span class="math inline">\(\ce{CO2 + C -&gt; 2 CO}\)</span></p>
 <p><span class="math display">\[\ce{CO2 + C -&gt; 2 CO}\]</span></p>
-<p><span class="math inline">\(\SI{299e6}{\metre\per\second}\)</span></p>
 <p><span class="math display">\[
 \begin{CD}
 A @&lt;&lt;&lt; B @&gt;&gt;&gt; C\\
@@ -369,15 +368,6 @@ A @&gt;a&gt;b&gt; B \\
 @VlVrV @AlArA \\
 C @&lt;a&lt;b&lt; D
 \end{CD}
-\]</span></p>
-<p><span class="math display">\[
-\begin{xy}
-\xymatrix {
-U \ar@/_/[ddr]_y \ar@{.&gt;}[dr]|{\langle x,y \rangle} \ar@/^/[drr]^x \\
- &amp; X \times_Z Y \ar[d]^q \ar[r]_p &amp; X \ar[d]_f \\
- &amp; Y \ar[r]^g &amp; Z
-}
-\end{xy}
 \]</span></p>
 <p>You can create footnotes like this<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a>.</p>
 <p>Typora allows you to insert URLs as links, wrapped by <code>&lt;i@typora.io&gt;</code> <a href="mailto:i@typora.io">i@typora.io</a></p>
@@ -504,8 +494,8 @@ E=mc^2
         <category>Markdown</category>
       </categories>
       <tags>
-        <tag>Markdown</tag>
         <tag>Typora</tag>
+        <tag>Markdown</tag>
       </tags>
   </entry>
   <entry>
@@ -637,8 +627,8 @@ l &amp;= m - n \label{eq5}
         <category>Markdown</category>
       </categories>
       <tags>
-        <tag>Hexo</tag>
         <tag>Markdown</tag>
+        <tag>Hexo</tag>
       </tags>
   </entry>
 </search>
