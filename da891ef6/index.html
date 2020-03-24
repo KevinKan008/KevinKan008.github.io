@@ -33,8 +33,8 @@
 <meta property="article:published_time" content="2020-02-12T06:25:00.000Z">
 <meta property="article:modified_time" content="2020-03-24T13:08:43.188Z">
 <meta property="article:author" content="Kevin Kan">
-<meta property="article:tag" content="Markdown">
 <meta property="article:tag" content="Typora">
+<meta property="article:tag" content="Markdown">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://kevinkan008.github.io/images/lion.png">
 
@@ -166,9 +166,8 @@
 
 </nav>
   <div class="site-search">
-    <div class="search-pop-overlay">
-  <div class="popup search-popup">
-      <div class="search-header">
+    <div class="popup search-popup">
+    <div class="search-header">
   <span class="search-icon">
     <i class="fa fa-search"></i>
   </span>
@@ -181,14 +180,10 @@
     <i class="fa fa-times-circle"></i>
   </span>
 </div>
-<div id="search-result">
-  <div id="no-result">
-    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
-  </div>
-</div>
+<div id="search-result"></div>
 
-  </div>
 </div>
+<div class="search-pop-overlay"></div>
 
   </div>
 </div>
@@ -523,8 +518,8 @@ E=mc^2
       <footer class="post-footer">
           
           <div class="post-tags">
-              <a href="/tags/Markdown/" rel="tag"><i class="fa fa-tag"></i> Markdown</a>
               <a href="/tags/Typora/" rel="tag"><i class="fa fa-tag"></i> Typora</a>
+              <a href="/tags/Markdown/" rel="tag"><i class="fa fa-tag"></i> Markdown</a>
           </div>
 
         
@@ -557,7 +552,7 @@ E=mc^2
 
 <script>
   window.addEventListener('tabs:register', () => {
-    let { activeClass } = CONFIG.comments;
+    let activeClass = CONFIG.comments.activeClass;
     if (CONFIG.comments.storage) {
       activeClass = localStorage.getItem('comments_active') || activeClass;
     }
@@ -924,7 +919,7 @@ if (document.querySelectorAll('pre.mermaid').length) {
       quicklink({
         timeout : 3000,
         priority: true,
-        ignores : [uri => uri.includes('#'),uri => uri === 'https://kevinkan008.github.io/da891ef6/',]
+        ignores : [uri => uri.includes('#'),uri => uri == 'https://kevinkan008.github.io/da891ef6/',]
       });
       });
   </script>

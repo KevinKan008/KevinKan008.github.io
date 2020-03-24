@@ -748,7 +748,7 @@ pre .javascript .function {
 .post-body .note {
   border-radius: 3px;
   margin-bottom: 20px;
-  padding: 1em;
+  padding: 15px;
   position: relative;
   border: 1px solid #eee;
   border-left-width: 5px;
@@ -1262,7 +1262,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #8c395b;
+  background: #a44118;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -2194,6 +2194,7 @@ ul.breadcrumb li + li:last-child {
   display: none;
   height: 100%;
   left: 0;
+  overflow: hidden;
   position: fixed;
   top: 0;
   width: 100%;
@@ -2202,8 +2203,11 @@ ul.breadcrumb li + li:last-child {
 .search-popup {
   background: var(--card-bg-color);
   border-radius: 5px;
+  display: none;
   height: 80%;
-  left: calc(50% - 350px);
+  left: 50%;
+  margin-left: -350px;
+  padding: 0;
   position: fixed;
   top: 10%;
   width: 700px;
@@ -2246,6 +2250,10 @@ ul.breadcrumb li + li:last-child {
 }
 .site-search input.search-input::-webkit-search-cancel-button {
   display: none;
+}
+.search-loading-icon {
+  margin: 20% auto 0 auto;
+  text-align: center;
 }
 .search-popup .search-input-container {
   flex-grow: 1;

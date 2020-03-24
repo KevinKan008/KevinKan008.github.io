@@ -160,9 +160,8 @@
 
 </nav>
   <div class="site-search">
-    <div class="search-pop-overlay">
-  <div class="popup search-popup">
-      <div class="search-header">
+    <div class="popup search-popup">
+    <div class="search-header">
   <span class="search-icon">
     <i class="fa fa-search"></i>
   </span>
@@ -175,14 +174,10 @@
     <i class="fa fa-times-circle"></i>
   </span>
 </div>
-<div id="search-result">
-  <div id="no-result">
-    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
-  </div>
-</div>
+<div id="search-result"></div>
 
-  </div>
 </div>
+<div class="search-pop-overlay"></div>
 
   </div>
 </div>
@@ -292,7 +287,7 @@
 
 <script>
   window.addEventListener('tabs:register', () => {
-    let { activeClass } = CONFIG.comments;
+    let activeClass = CONFIG.comments.activeClass;
     if (CONFIG.comments.storage) {
       activeClass = localStorage.getItem('comments_active') || activeClass;
     }
@@ -603,7 +598,7 @@ if (document.querySelectorAll('pre.mermaid').length) {
       quicklink({
         timeout : 3000,
         priority: true,
-        ignores : [uri => uri.includes('#'),uri => uri === 'https://kevinkan008.github.io/tags/Markdown/',]
+        ignores : [uri => uri.includes('#'),uri => uri == 'https://kevinkan008.github.io/tags/Markdown/',]
       });
       });
   </script>
