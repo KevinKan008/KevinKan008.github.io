@@ -36,7 +36,7 @@
 <h3 id="点击侧边栏头像返回首页">点击侧边栏头像返回首页</h3>
 <ol type="1">
 <li>找到主题侧边栏配置文件 <code>next/layout/_partials/sidebar/site-overview.swig</code>；</li>
-<li>找到头像配置位置class="site-author-image"；</li>
+<li>找到头像配置位置class=&quot;site-author-image&quot;；</li>
 <li>设置点击头像跳转，需将对应头像配置修改如下： <figure class="highlight diff"><figcaption><span>site-overview.swig</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="addition">+ &lt;a href="/"&gt;</span></span><br><span class="line">  &lt;img class="site-author-image" itemprop="image" alt="&#123;&#123; author &#125;&#125;"</span><br><span class="line">    src="&#123;&#123; url_for(theme.avatar.url) &#125;&#125;"&gt;</span><br><span class="line"><span class="addition">+ &lt;/a&gt;</span></span><br></pre></td></tr></table></figure></li>
 </ol>
 <h3 id="在侧栏添加背景音乐">在侧栏添加背景音乐</h3>
@@ -123,7 +123,7 @@
 <figure class="highlight bat"><table><tr><td class="code"><pre><span class="line">@<span class="built_in">echo</span> off</span><br><span class="line"><span class="built_in">setlocal</span> enabledelayedexpansion</span><br><span class="line"> </span><br><span class="line">::批量去掉文件名前N个字符，如果有文件夹会搜索文件夹下的每个文件进行修改</span><br><span class="line"><span class="built_in">set</span> /p <span class="built_in">format</span>=请输入需要操作的文件格式：</span><br><span class="line"><span class="built_in">set</span> /p deletenum=请输入需要删除文件名前多少个字符：</span><br><span class="line"><span class="keyword">for</span> /r <span class="variable">%%i</span> <span class="keyword">in</span> (.) <span class="keyword">do</span> (</span><br><span class="line">    <span class="keyword">for</span> /f "delims=" <span class="variable">%%a</span> <span class="keyword">in</span> (' <span class="built_in">dir</span> /b "<span class="variable">%%i</span>\*.<span class="variable">%format%</span>" <span class="number">2</span>^&gt;<span class="built_in">nul</span> ') <span class="keyword">do</span> (</span><br><span class="line">		<span class="built_in">set</span> "t=<span class="variable">%%~</span>na"</span><br><span class="line">        <span class="built_in">ren</span> "<span class="variable">%%i</span>\<span class="variable">%%a</span>" "<span class="variable">!t:~%deletenum%!</span><span class="variable">%%~</span>xa"</span><br><span class="line">    )</span><br><span class="line">)</span><br><span class="line"> </span><br><span class="line"><span class="built_in">pause</span></span><br></pre></td></tr></table></figure>
 <h3 id="删除文件名中某个特殊字符到最后-待完善">删除文件名中某个特殊字符到最后 （待完善）</h3>
 <p><del>起因：用<code>youtube-dl</code>下载播放列表老是在文件名添加一些标识信息？如：<code>原本所需文件名-sdngj17eerw.mp4</code></del></p>
-<p><strong>这个问题已得到解决</strong>，因为youtube-dl的下载文件名默认带有id，The current default template is <code>%(title)s-%(id)s.%(ext)s</code>. 只需在下载时再加一个参数：<code>-o "%(title)s.%(ext)s"</code></p>
+<p><strong>这个问题已得到解决</strong>，因为youtube-dl的下载文件名默认带有id，The current default template is <code>%(title)s-%(id)s.%(ext)s</code>. 只需在下载时再加一个参数：<code>-o &quot;%(title)s.%(ext)s&quot;</code></p>
 <figure class="highlight bat"><table><tr><td class="code"><pre><span class="line">@<span class="built_in">echo</span> off</span><br><span class="line"><span class="keyword">for</span> /f "tokens=<span class="number">1</span>,<span class="number">2</span>* delims=[]" <span class="variable">%%a</span> <span class="keyword">in</span> ('<span class="built_in">dir</span> /a-d/b') <span class="keyword">do</span> <span class="keyword">if</span> <span class="keyword">exist</span> "<span class="variable">%%~</span>a[]<span class="variable">%%~</span>b" <span class="built_in">ren</span> "<span class="variable">%%~</span>a[]<span class="variable">%%~</span>b" "<span class="variable">%%~</span>a<span class="variable">%%~</span>xb"</span><br><span class="line"><span class="built_in">pause</span></span><br></pre></td></tr></table></figure>
 <p>将<code>[]</code>替换成你需要的特殊字符： <figure class="highlight bat"><table><tr><td class="code"><pre><span class="line">@<span class="built_in">echo</span> off</span><br><span class="line"><span class="keyword">for</span> /f "tokens=<span class="number">1</span>,<span class="number">2</span>* delims=-" <span class="variable">%%a</span> <span class="keyword">in</span> ('<span class="built_in">dir</span> /a-d/b') <span class="keyword">do</span> <span class="keyword">if</span> <span class="keyword">exist</span> "<span class="variable">%%~</span>a-<span class="variable">%%~</span>b" <span class="built_in">ren</span> "<span class="variable">%%~</span>a-<span class="variable">%%~</span>b" "<span class="variable">%%~</span>a<span class="variable">%%~</span>xb"</span><br><span class="line"><span class="built_in">pause</span></span><br></pre></td></tr></table></figure> 示例(对含有两个特殊字符无效)： <figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-tag">abc-wee123</span><span class="selector-class">.txt</span></span><br><span class="line"><span class="selector-tag">sddf-tthh</span><span class="selector-class">.txt</span></span><br><span class="line"><span class="selector-tag">qaq-dff-ghh</span><span class="selector-class">.txt</span></span><br></pre></td></tr></table></figure> 将变成 <figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-tag">abc</span><span class="selector-class">.txt</span></span><br><span class="line"><span class="selector-tag">sddf</span><span class="selector-class">.txt</span></span><br><span class="line"><span class="selector-tag">qaq-dff-ghh</span><span class="selector-class">.txt</span></span><br></pre></td></tr></table></figure></p>
 <h3 id="将当前目录和子目录不限层级下的所有文件列出">将当前目录和子目录（不限层级）下的所有文件列出</h3>
@@ -328,9 +328,59 @@ Add another diagram to demo page    : 48h
     <title>MARKDOWN 语法说明</title>
     <url>/da891ef6/</url>
     <content><![CDATA[<h2 id="常见样式">常见样式 🚀</h2>
+In the
+<head>
+<p>of your HTML, include</p>
+<link rel="stylesheet" type="text/css" href="http://tikzjax.com/v1/fonts.css">
+<script src="http://tikzjax.com/v1/tikzjax.js"></script>
+Then in the
+<body>
+<p>, include TikZ code such as</p>
+<script type="text/tikz">
+  \begin{tikzpicture}
+    \draw (0,0) circle (1in);
+  \end{tikzpicture}
+</script>
 <p><em>斜体</em> <strong>粗体</strong> :sparkles: <del>删除线</del></p>
-<p>You can create footnotes like this<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>.</p>
-<p>Typora allows you to insert URLs as links, wrapped by <code>&lt;i@typora.io&gt;</code> <a href="mailto:i@typora.io" class="email">i@typora.io</a></p>
+<p><span class="math inline">\(\bra{\psi} \quad \ket{\psi}\)</span></p>
+<p><span class="math inline">\(\alpha + \beta = \gamma\)</span></p>
+<p><span class="math display">\[ \require{physics} \Braket{ \phi | \frac{\partial^2}{\partial t^2} | \psi } \]</span></p>
+<p><span class="math inline">\(\ce{CO2 + C -&gt; 2 CO}\)</span></p>
+<p><span class="math display">\[\ce{CO2 + C -&gt; 2 CO}\]</span></p>
+<p><span class="math inline">\(\SI{299e6}{\metre\per\second}\)</span></p>
+<p><span class="math display">\[
+\begin{CD}
+A @&lt;&lt;&lt; B @&gt;&gt;&gt; C\\
+@. @| @AAA\\
+@. D @= E
+\end{CD}
+\]</span></p>
+<p>hhh <span class="math display">\[
+\require{AMScd}
+\begin{CD}
+\mathbb{Z}/p^n\mathbb{Z} @&gt;{\theta_{n+1,\alpha}}&gt;&gt; U_1/U_{n+1}\\
+@VVV @VVV\\
+\mathbb{Z}/p^{n-1}\mathbb{Z} @&gt;{\theta_{n,\alpha}}&gt;&gt; U_1/U_n
+\end{CD}
+\]</span></p>
+<p><span class="math display">\[
+\begin{CD}
+A @&gt;a&gt;b&gt; B \\
+@VlVrV @AlArA \\
+C @&lt;a&lt;b&lt; D
+\end{CD}
+\]</span></p>
+<p><span class="math display">\[
+\begin{xy}
+\xymatrix {
+U \ar@/_/[ddr]_y \ar@{.&gt;}[dr]|{\langle x,y \rangle} \ar@/^/[drr]^x \\
+ &amp; X \times_Z Y \ar[d]^q \ar[r]_p &amp; X \ar[d]_f \\
+ &amp; Y \ar[r]^g &amp; Z
+}
+\end{xy}
+\]</span></p>
+<p>You can create footnotes like this<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a>.</p>
+<p>Typora allows you to insert URLs as links, wrapped by <code>&lt;i@typora.io&gt;</code> <a href="mailto:i@typora.io">i@typora.io</a></p>
 <blockquote>
 <p>引用</p>
 </blockquote>
@@ -367,14 +417,12 @@ TeX 吉祥物
 </ol>
 <p>注意：序号跟内容之间要有空格</p>
 <p>待办列表:</p>
-<ul class="task-list">
-<li><input type="checkbox" disabled="" />
-Incomplete item</li>
-<li><input type="checkbox" disabled="" checked="" />
-Complete item</li>
+<ul>
+<li>[ ] Incomplete item</li>
+<li>[x] Complete item</li>
 </ul>
 <h2 id="化学式">化学式</h2>
-<p>  <span class="math inline">\(\ce{[Pt(\eta^2-C2H4)Cl3]-}\)</span><br />
+<p><span class="math inline">\(\ce{H2O} \quad \ce{Fe^n+}\)</span> <span class="math inline">\(\ce{[Pt(\eta^2-C2H4)Cl3]-}\)</span><br />
 <span class="math inline">\(\ce{NO_x}\)</span> <span class="math inline">\(\ce{CO3^2-_{(aq)}}\)</span> <span class="math inline">\(\pu{123 kJ//mol}\)</span> <span class="math inline">\(\ce{A-B=C#D}\)</span> <span class="math inline">\(\ce{C6H5-CHO}\)</span> <span class="math inline">\(\pu{123 kJ*mol-1}\)</span> <span class="math inline">\(\ce{[\{(X2)3\}2]^3+}\)</span> <span class="math inline">\(\ce{KCr(SO4)2*12H2O}\)</span> <span class="math inline">\(\pu{123 kJ mol-1}\)</span><br />
 <span class="math inline">\(\ce{^40_18Ar + \gamma{} + \nu_e}\)</span> <span class="math inline">\(\ce{M^{..}_i}\)</span><br />
 <span class="math inline">\(\ce{x Na(NH4)HPO4 -&gt;[\Delta] (NaPO3)_x + x NH3 ^ + x H2O}\)</span> <span class="math inline">\(\ce{Fe^{II}Fe^{III}2O4}\)</span></p>
@@ -445,10 +493,10 @@ E=mc^2
 \nabla\times\vec{B} &amp;=&amp; \mu_0\left(\vec{J}+\epsilon_0\frac{\partial E}{\partial t} \right)
 \end{eqnarray}
 \]</span></p>
-<section class="footnotes" role="doc-endnotes">
+<section class="footnotes">
 <hr />
 <ol>
-<li id="fn1" role="doc-endnote"><p>Here is <span class="math inline">\(a^2+b^2=c^2\)</span> the <em>text</em> of the <strong>footnote</strong>.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn1"><p>Here is <span class="math inline">\(a^2+b^2=c^2\)</span> the <em>text</em> of the <strong>footnote</strong>.<a href="#fnref1" class="footnote-back">↩</a></p></li>
 </ol>
 </section>
 ]]></content>
@@ -528,7 +576,7 @@ E=mc^2
 <p><a href="/4a17b156#Start">hello-world/#Start</a></p>
 <p><a href="/c6731e3b#Quote">hello-world/#Start</a></p>
 <figure>
-<img data-src="/images/1.jpg" alt="" /><figcaption>hello-world/#Start</figcaption>
+<img data-src="/images/1.jpg" alt="hello-world/#Start" /><figcaption>hello-world/#Start</figcaption>
 </figure>
 <p><a href="/images/1.jpg">hello-world/#Start</a></p>
 <p><a href="#Start">hello-world/#Start</a></p>

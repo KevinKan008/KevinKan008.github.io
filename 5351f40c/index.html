@@ -316,7 +316,7 @@
 <h3 id="点击侧边栏头像返回首页">点击侧边栏头像返回首页</h3>
 <ol type="1">
 <li>找到主题侧边栏配置文件 <code>next/layout/_partials/sidebar/site-overview.swig</code>；</li>
-<li>找到头像配置位置class="site-author-image"；</li>
+<li>找到头像配置位置class=&quot;site-author-image&quot;；</li>
 <li>设置点击头像跳转，需将对应头像配置修改如下： <figure class="highlight diff"><figcaption><span>site-overview.swig</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="addition">+ &lt;a href="/"&gt;</span></span><br><span class="line">  &lt;img class="site-author-image" itemprop="image" alt="&#123;&#123; author &#125;&#125;"</span><br><span class="line">    src="&#123;&#123; url_for(theme.avatar.url) &#125;&#125;"&gt;</span><br><span class="line"><span class="addition">+ &lt;/a&gt;</span></span><br></pre></td></tr></table></figure></li>
 </ol>
 <h3 id="在侧栏添加背景音乐">在侧栏添加背景音乐</h3>
@@ -576,7 +576,7 @@
     <span class="post-meta-item-icon">
       <i class="fa fa-area-chart"></i>
     </span>
-    <span title="站点总字数">16k</span>
+    <span title="站点总字数">17k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>

@@ -237,7 +237,7 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-03-10 22:06:16" itemprop="dateModified" datetime="2020-03-10T22:06:16+08:00">2020-03-10</time>
+                <time title="修改时间：2020-03-24 20:56:16" itemprop="dateModified" datetime="2020-03-24T20:56:16+08:00">2020-03-24</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -684,6 +684,181 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://kevinkan008.github.io/da891ef6/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/uploads/avatar.jpg">
+      <meta itemprop="name" content="Kevin Kan">
+      <meta itemprop="description" content="天地有正气，杂然赋流形。">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="梵特の希">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/da891ef6/" class="post-title-link" itemprop="url">MARKDOWN 语法说明</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-02-12 14:25:00" itemprop="dateCreated datePublished" datetime="2020-02-12T14:25:00+08:00">2020-02-12</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-03-24 20:55:50" itemprop="dateModified" datetime="2020-03-24T20:55:50+08:00">2020-03-24</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Markdown/" itemprop="url" rel="index"><span itemprop="name">Markdown</span></a>
+                </span>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="fa fa-comment-o"></i>
+      </span>
+      <span class="post-meta-item-text">Valine：</span>
+    
+    <a title="valine" href="/da891ef6/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/da891ef6/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+    <span class="post-meta-divider">|</span>
+    <span style="color: Tomato;">
+    <i class="fa fa-thumb-tack fa-fw"></i>置顶</span>
+    <span class="post-meta-divider">|</span>
+<br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-file-word-o"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>2.7k</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-clock-o"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>2 mins.</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="常见样式">常见样式 🚀</h2>
+In the
+<head>
+<p>of your HTML, include</p>
+<link rel="stylesheet" type="text/css" href="http://tikzjax.com/v1/fonts.css">
+<script src="http://tikzjax.com/v1/tikzjax.js"></script>
+Then in the
+<body>
+<p>, include TikZ code such as</p>
+<script type="text/tikz">
+  \begin{tikzpicture}
+    \draw (0,0) circle (1in);
+  \end{tikzpicture}
+</script>
+<p><em>斜体</em> <strong>粗体</strong> :sparkles: <del>删除线</del></p>
+<p><span class="math inline">\(\bra{\psi} \quad \ket{\psi}\)</span></p>
+<p><span class="math inline">\(\alpha + \beta = \gamma\)</span></p>
+<p><span class="math display">\[ \require{physics} \Braket{ \phi | \frac{\partial^2}{\partial t^2} | \psi } \]</span></p>
+<p><span class="math inline">\(\ce{CO2 + C -&gt; 2 CO}\)</span></p>
+<p><span class="math display">\[\ce{CO2 + C -&gt; 2 CO}\]</span></p>
+<p><span class="math inline">\(\SI{299e6}{\metre\per\second}\)</span></p>
+<p><span class="math display">\[
+\begin{CD}
+A @&lt;&lt;&lt; B @&gt;&gt;&gt; C\\
+@. @| @AAA\\
+@. D @= E
+\end{CD}
+\]</span></p>
+<p>hhh <span class="math display">\[
+\require{AMScd}
+\begin{CD}
+\mathbb{Z}/p^n\mathbb{Z} @&gt;{\theta_{n+1,\alpha}}&gt;&gt; U_1/U_{n+1}\\
+@VVV @VVV\\
+\mathbb{Z}/p^{n-1}\mathbb{Z} @&gt;{\theta_{n,\alpha}}&gt;&gt; U_1/U_n
+\end{CD}
+\]</span></p>
+<p><span class="math display">\[
+\begin{CD}
+A @&gt;a&gt;b&gt; B \\
+@VlVrV @AlArA \\
+C @&lt;a&lt;b&lt; D
+\end{CD}
+\]</span></p>
+<p><span class="math display">\[
+\begin{xy}
+\xymatrix {
+U \ar@/_/[ddr]_y \ar@{.&gt;}[dr]|{\langle x,y \rangle} \ar@/^/[drr]^x \\
+ &amp; X \times_Z Y \ar[d]^q \ar[r]_p &amp; X \ar[d]_f \\
+ &amp; Y \ar[r]^g &amp; Z
+}
+\end{xy}
+\]</span></p>
+<p>You can create footnotes like this<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a>.</p>
+<p>Typora allows you to insert URLs as links, wrapped by <code>&lt;i@typora.io&gt;</code> <a href="mailto:i@typora.io">i@typora.io</a></p>
+<blockquote>
+<p>引用</p>
+</blockquote>
+<blockquote class="blockquote-center">
+            <p>为伊消得人憔悴。。。。。。 <strong>Hexo</strong></p>
+
+          </blockquote>
+<p><span style="color:red">this text is red</span></p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/da891ef6/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="https://kevinkan008.github.io/59b5be49/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -715,7 +890,7 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-03-10 21:51:29" itemprop="dateModified" datetime="2020-03-10T21:51:29+08:00">2020-03-10</time>
+                <time title="修改时间：2020-03-24 20:55:30" itemprop="dateModified" datetime="2020-03-24T20:55:30+08:00">2020-03-24</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -1006,126 +1181,6 @@ MathJax = {
   
   
 
-        
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://kevinkan008.github.io/da891ef6/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/uploads/avatar.jpg">
-      <meta itemprop="name" content="Kevin Kan">
-      <meta itemprop="description" content="天地有正气，杂然赋流形。">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="梵特の希">
-    </span>
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-          
-            <a href="/da891ef6/" class="post-title-link" itemprop="url">MARKDOWN 语法说明</a>
-        </h1>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2020-02-12 14:25:00" itemprop="dateCreated datePublished" datetime="2020-02-12T14:25:00+08:00">2020-02-12</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-03-10 22:18:56" itemprop="dateModified" datetime="2020-03-10T22:18:56+08:00">2020-03-10</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Markdown/" itemprop="url" rel="index"><span itemprop="name">Markdown</span></a>
-                </span>
-            </span>
-
-          
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="fa fa-comment-o"></i>
-      </span>
-      <span class="post-meta-item-text">Valine：</span>
-    
-    <a title="valine" href="/da891ef6/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/da891ef6/" itemprop="commentCount"></span>
-    </a>
-  </span>
-  
-  <br>
-            <span class="post-meta-item" title="本文字数">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-file-word-o"></i>
-              </span>
-                <span class="post-meta-item-text">本文字数：</span>
-              <span>1.8k</span>
-            </span>
-            <span class="post-meta-item" title="阅读时长">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-clock-o"></i>
-              </span>
-                <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>2 mins.</span>
-            </span>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h2 id="常见样式">常见样式 🚀</h2>
-<p><em>斜体</em> <strong>粗体</strong> :sparkles: <del>删除线</del></p>
-<p>You can create footnotes like this<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>.</p>
-<p>Typora allows you to insert URLs as links, wrapped by <code>&lt;i@typora.io&gt;</code> <a href="mailto:i@typora.io" class="email">i@typora.io</a></p>
-<blockquote>
-<p>引用</p>
-</blockquote>
-<blockquote class="blockquote-center">
-            <p>为伊消得人憔悴。。。。。。 <strong>Hexo</strong></p>
-
-          </blockquote>
-<p><span style="color:red">this text is red</span></p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/da891ef6/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
   </div>
 
   
@@ -1301,7 +1356,7 @@ MathJax = {
     <span class="post-meta-item-icon">
       <i class="fa fa-area-chart"></i>
     </span>
-    <span title="站点总字数">16k</span>
+    <span title="站点总字数">17k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
