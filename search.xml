@@ -494,6 +494,13 @@ E=mc^2
 <p><span class="math inline">\(\Gamma(n) = (n-1)!\quad \forall n \in \mathbb{N} \quad \bra{\psi} \quad \ket{\psi}\)</span></p>
 <p><span class="math inline">\(\order{x^2} \quad \comm{A}{B} \quad \laplacian{\Psi} \quad \curl{\vb{a}} \quad \div{\vb{a}} \quad \grad{\Psi}\)</span></p>
 <p><span class="math display">\[ \Braket{ \phi | \frac{\partial^2}{\partial t^2} | \psi } \]</span></p>
+<p><span class="math inline">\(\mel{n}{H}{m}\quad \mel*{n}{H}{m}\)</span></p>
+<p><span class="math inline">\(\mel{\phi}{\frac{\partial^2}{\partial t^2}}{\psi}\)</span></p>
+<p><span class="math inline">\(\mel*{\phi}{\frac{\partial^2}{\partial t^2}}{\psi}\)</span></p>
+<p><span class="math inline">\(\mel**{\phi}{\frac{\partial^2}{\partial t^2}}{\psi}\)</span></p>
+<p><span class="math display">\[\mel{\phi}{\frac{\partial^2}{\partial t^2}}{\psi}\]</span></p>
+<p><span class="math display">\[\mel*{\phi}{\frac{\partial^2}{\partial t^2}}{\psi}\]</span></p>
+<p><span class="math display">\[\mel**{\phi}{\frac{\partial^2}{\partial t^2}}{\psi}\]</span></p>
 <a id="more"></a>
 <h3 id="font-awesome-特性"><a name="awesome">Font Awesome 特性</a></h3>
 <p><i class="fa fa-google"></i>oole<br> <i class="fa fa-google fa-spin"></i>oole<br> <i class="fa fa-crow"></i> <i class="fa fa-key"></i> normal <span style="color:#FFB90F;"><i class="fa fa-key"></i></span>golden <span style="color:#FFB90F;"><i class="fa fa-key fa-rotate-90"></i> </span>fa-rotate-90 <span style="color:#FFB90F;"><i class="fa fa-key fa-rotate-180"></i></span> fa-rotate-180 <span style="color:#FFB90F;"><i class="fa fa-key fa-rotate-270"></i></span> fa-rotate-270 <span style="color:#FFB90F;"><i class="fa fa-key fa-flip-horizontal"></i></span> fa-flip-horizontal <span style="color:#FFB90F;"><i class="fa fa-key fa-flip-vertical"></i></span> fa-flip-vertical</p>
