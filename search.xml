@@ -327,7 +327,7 @@ Add another diagram to demo page    : 48h
   <entry>
     <title>MARKDOWN 语法说明</title>
     <url>/da891ef6/</url>
-    <content><![CDATA[<h2 id="常见gg样式">常见gg样式 🚀</h2>
+    <content><![CDATA[<h2 id="常见ss样式">常见ss样式 🚀</h2>
 In the
 <head>
 <p>of your HTML, include</p>
@@ -494,8 +494,8 @@ E=mc^2
         <category>Markdown</category>
       </categories>
       <tags>
-        <tag>Typora</tag>
         <tag>Markdown</tag>
+        <tag>Typora</tag>
       </tags>
   </entry>
   <entry>
@@ -627,8 +627,8 @@ l &amp;= m - n \label{eq5}
         <category>Markdown</category>
       </categories>
       <tags>
-        <tag>Markdown</tag>
         <tag>Hexo</tag>
+        <tag>Markdown</tag>
       </tags>
   </entry>
 </search>
