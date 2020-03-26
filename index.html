@@ -14,12 +14,13 @@
 
 
 <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/font-awesome@4/css/font-awesome.min.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.css">
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/pace-js@1.0.2/themes/orange/pace-theme-flash.min.css">
   <script src="//cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script>
 
 <script id="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"kevinkan008.github.io","root":"/","scheme":"Mist","version":"7.7.2","exturl":false,"sidebar":{"position":"left","width":300,"display":"post","padding":18,"offset":12,"onmobile":true},"copycode":{"enable":true,"show_result":true,"style":"flat"},"back2top":{"enable":false,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":true,"lazyload":true,"pangu":true,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":false,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+    var CONFIG = {"hostname":"kevinkan008.github.io","root":"/","scheme":"Mist","version":"7.7.2","exturl":false,"sidebar":{"position":"left","width":300,"display":"post","padding":18,"offset":12,"onmobile":true},"copycode":{"enable":true,"show_result":true,"style":"flat"},"back2top":{"enable":false,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":false,"pangu":true,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":false,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
   <meta name="description" content="天地有正气，杂然赋流形。">
@@ -139,17 +140,17 @@
   </li>
         <li class="menu-item menu-item-tags">
 
-    <a href="/tags/" rel="section"><i class="fa fa-fw fa-tags"></i>标签<span class="badge">10</span></a>
+    <a href="/tags/" rel="section"><i class="fa fa-fw fa-tags"></i>标签<span class="badge">12</span></a>
 
   </li>
         <li class="menu-item menu-item-categories">
 
-    <a href="/categories/" rel="section"><i class="fa fa-fw fa-th"></i>分类<span class="badge">9</span></a>
+    <a href="/categories/" rel="section"><i class="fa fa-fw fa-th"></i>分类<span class="badge">11</span></a>
 
   </li>
         <li class="menu-item menu-item-archives">
 
-    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>归档<span class="badge">8</span></a>
+    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>归档<span class="badge">9</span></a>
 
   </li>
       <li class="menu-item menu-item-search">
@@ -232,7 +233,7 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-03-25 00:40:32" itemprop="dateModified" datetime="2020-03-25T00:40:32+08:00">2020-03-25</time>
+                <time title="修改时间：2020-03-26 22:21:22" itemprop="dateModified" datetime="2020-03-26T22:21:22+08:00">2020-03-26</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -273,7 +274,7 @@
                 <i class="fa fa-file-word-o"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>2.9k</span>
+              <span>3k</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
@@ -296,6 +297,7 @@
 <p>一键四连 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo clean &amp;&amp; hexo g -d &amp;&amp; hexo s -o</span><br></pre></td></tr></table></figure></p>
 <p>NexT v7.7.2 Support MathJax v3.0</p>
 <p>妙啊，支持新增的 <code>braket、physics</code> 宏包了</p>
+<p><a href="http://mirrors.ctan.org/macros/latex/contrib/physics/physics.pdf" target="_blank" rel="noopener">CTAN上physics宏包的pdf文档</a></p>
 <p><span class="math inline">\(\Gamma(n) = (n-1)!\quad \forall n \in \mathbb{N} \quad \bra{\psi} \quad \ket{\psi}\)</span></p>
 <p><span class="math inline">\(\order{x^2} \quad \comm{A}{B} \quad \laplacian{\Psi} \quad \curl{\vb{a}} \quad \div{\vb{a}} \quad \grad{\Psi}\)</span></p>
 <p><span class="math inline">\(\Braket{ \phi | \frac{\partial^2}{\partial t^2} | \psi }\)</span></p>
@@ -350,10 +352,16 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              
 
-              <time title="创建时间：2020-03-10 19:32:53 / 修改时间：22:36:44" itemprop="dateCreated datePublished" datetime="2020-03-10T19:32:53+08:00">2020-03-10</time>
+              <time title="创建时间：2020-03-10 19:32:53" itemprop="dateCreated datePublished" datetime="2020-03-10T19:32:53+08:00">2020-03-10</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-03-25 20:55:51" itemprop="dateModified" datetime="2020-03-25T20:55:51+08:00">2020-03-25</time>
+              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
@@ -415,14 +423,7 @@
           <p>B站和A站已搬运的视频可去主页查看：</p>
 <p><a href="https://space.bilibili.com/34793271" target="_blank" rel="noopener"><i class="fa fa-custom bilibili_tv"></i> 站个人主页</a>    <a href="https://www.acfun.cn/u/9085094.aspx" target="_blank" rel="noopener"><i class="fa fa-custom CN_acfuntv"></i> 站个人主页</a></p>
 <p>与这些公开课相关的可以在这篇文章底部留言（不需要登录即可进行评论）</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/82d246a9/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
+
       
     </div>
 
@@ -814,6 +815,135 @@ C @&lt;a&lt;b&lt; D
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://kevinkan008.github.io/3befaed8/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/uploads/avatar.jpg">
+      <meta itemprop="name" content="Kevin Kan">
+      <meta itemprop="description" content="天地有正气，杂然赋流形。">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="梵特の希">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/3befaed8/" class="post-title-link" itemprop="url">mpv player 安装及配置</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-03-25 21:22:25" itemprop="dateCreated datePublished" datetime="2020-03-25T21:22:25+08:00">2020-03-25</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-03-26 22:20:55" itemprop="dateModified" datetime="2020-03-26T22:20:55+08:00">2020-03-26</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Software/" itemprop="url" rel="index"><span itemprop="name">Software</span></a>
+                </span>
+                  ，
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Software/mpv-player/" itemprop="url" rel="index"><span itemprop="name">mpv player</span></a>
+                </span>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="fa fa-comment-o"></i>
+      </span>
+      <span class="post-meta-item-text">Valine：</span>
+    
+    <a title="valine" href="/3befaed8/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/3befaed8/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-file-word-o"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>292</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-clock-o"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>1 mins.</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="mpv-简介">mpv 简介</h2>
+<p><a href="https://mpv.io/" target="_blank" rel="noopener">mpv player 官网</a> <blockquote class="blockquote-center">
+            <p>mpv is a free (as in freedom) media player for the command line. It supports a wide variety of media file formats, audio and video codecs, and subtitle types.</p>
+
+          </blockquote></p>
+<h2 id="mpv-安装">mpv 安装</h2>
+<p>这里以 Win 10 64 bit 为例(还有 *unix、Mac 客户端)：</p>
+<img src="/images/mpv0.png" />
+<center>
+<font size="4" color="red">官网的 Installation 页面</font>
+</center>
+<p><a href="https://sourceforge.net/projects/mpv-player-windows/files" target="_blank" rel="noopener">点我跳转到mpv的sourceforge页面</a></p>
+<figure>
+<img src="/images/mpv1.png" alt="ghhhhh" /><figcaption>ghhhhh</figcaption>
+</figure>
+<img src="/images/mpv2.png" />
+<center>
+<font size="4" color="red">mpv player (Windows)</font>
+</center>
+<p>将下载好的软件压缩包解压至某一目录，双击目录下的 <code>mpv.exe</code>，界面如下：</p>
+<img src="/images/mpv3.png" />
+<center>
+<font size="4" color="red">将视频拖入窗口播放</font>
+</center>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="https://kevinkan008.github.io/59b5be49/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -971,7 +1101,7 @@ MathJax = {
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-02-20 03:55:40" itemprop="dateModified" datetime="2020-02-20T03:55:40+08:00">2020-02-20</time>
+                <time title="修改时间：2020-03-25 20:56:00" itemprop="dateModified" datetime="2020-03-25T20:56:00+08:00">2020-03-25</time>
               </span>
 
           
@@ -1207,20 +1337,20 @@ MathJax = {
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">8</span>
+          <span class="site-state-item-count">9</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
             <a href="/categories/">
           
-        <span class="site-state-item-count">9</span>
+        <span class="site-state-item-count">11</span>
         <span class="site-state-item-name">分类</span></a>
       </div>
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">10</span>
+        <span class="site-state-item-count">12</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
@@ -1340,8 +1470,8 @@ MathJax = {
   
   <script src="/lib/anime.min.js"></script>
   <script src="//cdn.jsdelivr.net/gh/theme-next/theme-next-pjax@0/pjax.min.js"></script>
-  <script src="//cdn.jsdelivr.net/npm/medium-zoom@1/dist/medium-zoom.min.js"></script>
-  <script src="//cdn.jsdelivr.net/npm/lozad@1/dist/lozad.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+  <script src="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/pangu@4/dist/browser/pangu.min.js"></script>
 
 <script src="/js/utils.js"></script>
