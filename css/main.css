@@ -416,7 +416,7 @@ pre {
 }
 pre,
 code {
-  font-family: 'Fira Code', consolas, Menlo, monospace, "Noto Serif SC", "PingFang SC", "Microsoft YaHei";
+  font-family: 'Ubuntu Mono', consolas, Menlo, monospace, "Noto Serif SC", "PingFang SC", "Microsoft YaHei";
 }
 code {
   background: #eee;
@@ -1262,7 +1262,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #82ad52;
+  background: #58a8ff;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -2604,7 +2604,7 @@ hr {
   border-bottom: 1px solid #fc6423;
 }
 .post-body {
-  color: #333;
+  color: #000;
 }
 @font-face {
   font-family: "iconfont";
@@ -2639,7 +2639,7 @@ hr {
 #jrsc {
   font-family: 'Ma Shan Zheng', cursive;
   font-style: normal;
-  font-size: 19px;
+  font-size: 20px;
   color: #fc6423;
 }
 .moon-menu,
