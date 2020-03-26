@@ -8,6 +8,7 @@
             <p>mpv is a free (as in freedom) media player for the command line. It supports a wide variety of media file formats, audio and video codecs, and subtitle types.</p>
 
           </blockquote></p>
+<a id="more"></a>
 <h2 id="mpv-安装">mpv 安装</h2>
 <p>这里以 Win 10 64 bit 为例(还有 *unix、Mac 客户端)：</p>
 <img src="/images/mpv0.png" />
@@ -15,10 +16,7 @@
 <font size="4" color="red">官网的 Installation 页面</font>
 </center>
 <p><a href="https://sourceforge.net/projects/mpv-player-windows/files" target="_blank" rel="noopener">点我跳转到mpv的sourceforge页面</a></p>
-<figure>
-<img src="/images/mpv1.png" alt="ghhhhh" /><figcaption>ghhhhh</figcaption>
-</figure>
-<img src="/images/mpv2.png" />
+<img src="/images/mpv1.png" alt="hhhh哈哈哈" /> <img src="/images/mpv2.png" />
 <center>
 <font size="4" color="red">mpv player (Windows)</font>
 </center>
@@ -27,6 +25,7 @@
 <center>
 <font size="4" color="red">将视频拖入窗口播放</font>
 </center>
+<p>就这？就这？就这？</p>
 ]]></content>
       <categories>
         <category>Software</category>
