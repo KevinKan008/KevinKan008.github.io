@@ -522,7 +522,7 @@ E=mc^2
     <title>Hello World &amp; Hexo</title>
     <url>/4a17b156/</url>
     <content><![CDATA[<h2 id="hello-hexo-next">Hello Hexo &amp; NexT!</h2>
-<p>一键四连sss <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo clean &amp;&amp; hexo g -d &amp;&amp; hexo s -o</span><br></pre></td></tr></table></figure></p>
+<p>一键四连ffff <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo clean &amp;&amp; hexo g -d &amp;&amp; hexo s -o</span><br></pre></td></tr></table></figure></p>
 <p>NexT v7.7.2 Support MathJax v3.0</p>
 <p>妙啊，支持新增的 <code>braket、physics</code> 宏包了</p>
 <p><a href="http://mirrors.ctan.org/macros/latex/contrib/physics/physics.pdf" target="_blank" rel="noopener">CTAN上physics宏包的pdf文档</a></p>
