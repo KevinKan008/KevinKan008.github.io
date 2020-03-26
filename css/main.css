@@ -170,7 +170,7 @@ body {
 body {
   background: var(--body-bg-color);
   color: var(--text-color);
-  font-family: 'Merriweather', "Noto Serif SC", "PingFang SC", "Microsoft YaHei", sans-serif;
+  font-family: 'Merriweather', "PingFang SC", "Microsoft YaHei", sans-serif;
   font-size: 1.1em;
   line-height: 2;
 }
@@ -186,7 +186,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Merriweather', "Noto Serif SC", "PingFang SC", "Microsoft YaHei", sans-serif;
+  font-family: 'Merriweather', "PingFang SC", "Microsoft YaHei", sans-serif;
   font-weight: bold;
   line-height: 1.5;
   margin: 20px 0 15px;
@@ -411,12 +411,12 @@ td {
 pre {
   background: #f7f7f7;
   color: #4d4d4c;
-  line-height: 1.6;
+  line-height: 1.5;
   margin: 0 auto 20px;
 }
 pre,
 code {
-  font-family: 'Ubuntu Mono', consolas, Menlo, monospace, "Noto Serif SC", "PingFang SC", "Microsoft YaHei";
+  font-family: 'Ubuntu Mono', consolas, Menlo, monospace, "PingFang SC", "Microsoft YaHei";
 }
 code {
   background: #eee;
@@ -1013,7 +1013,7 @@ pre .javascript .function {
 }
 .site-title {
   display: inline-block;
-  font-family: 'Roboto Slab', 'Merriweather', "Noto Serif SC", "PingFang SC", "Microsoft YaHei", sans-serif;
+  font-family: 'Roboto Slab', 'Merriweather', "PingFang SC", "Microsoft YaHei", sans-serif;
   font-size: 1.375em;
   font-weight: normal;
   line-height: 1.5;
@@ -1262,7 +1262,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #ff20b4;
+  background: #8fff1c;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -1547,7 +1547,7 @@ pre .javascript .function {
   }
 }
 .post-body {
-  font-family: 'Merriweather', "Noto Serif SC", "PingFang SC", "Microsoft YaHei", sans-serif;
+  font-family: 'Merriweather', "PingFang SC", "Microsoft YaHei", sans-serif;
   overflow-wrap: break-word;
   word-wrap: break-word;
 }
@@ -1849,7 +1849,7 @@ pre .javascript .function {
 }
 .posts-expand .post-meta {
   color: #999;
-  font-family: 'Merriweather', "Noto Serif SC", "PingFang SC", "Microsoft YaHei", sans-serif;
+  font-family: 'Merriweather', "PingFang SC", "Microsoft YaHei", sans-serif;
   font-size: 0.75em;
   margin: 3px 0 60px 0;
   text-align: center;
