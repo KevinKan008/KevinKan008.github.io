@@ -7,17 +7,17 @@
   src="https://cdnjs.loli.net/ajax/libs/mathjax/3.0.1/es5/tex-mml-chtml.js">
 </script>
 <figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">id</span>=<span class="string">"MathJax-script"</span> <span class="attr">async</span></span></span><br><span class="line"><span class="tag">  <span class="attr">src</span>=<span class="string">"https://cdnjs.loli.net/ajax/libs/mathjax/3.0.1/es5/tex-mml-chtml.js"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<p><span class="math display">\[
-$\mel{n}{H}{m}\quad \mel**{n}{H}{m}$
-\]</span></p>
-<p>然后在公式表达式里面引入，eg:</p>
+<h2 id="常用-the-texlatex-extension-list">常用 <code>The TeX/LaTeX Extension List</code></h2>
+<p><code>amsCd, bbox, color, physics, etc ...</code></p>
+<p>格式：在数学表达式里面引入 <code>\require{physics}</code></p>
+<p>然后在公式表达式里面引入（引入一次就够了，但公式得出现在引用之后）：</p>
 <figure class="highlight tex"><table><tr><td class="code"><pre><span class="line"><span class="formula">$$</span></span><br><span class="line"><span class="formula"><span class="tag">\<span class="name">require</span><span class="string">&#123;physics&#125;</span></span></span></span><br><span class="line"><span class="formula"><span class="tag">\<span class="name">laplacian</span><span class="string">&#123;\Psi&#125;</span></span> <span class="tag">\<span class="name">quad</span></span> <span class="tag">\<span class="name">curl</span><span class="string">&#123;\vb&#123;a&#125;</span></span>&#125; <span class="tag">\<span class="name">quad</span></span> <span class="tag">\<span class="name">div</span><span class="string">&#123;\vb&#123;a&#125;</span></span>&#125; <span class="tag">\<span class="name">quad</span></span> <span class="tag">\<span class="name">grad</span><span class="string">&#123;\Psi&#125;</span></span></span></span><br><span class="line"><span class="formula">$$</span></span><br></pre></td></tr></table></figure>
 <p><span class="math display">\[
 \require{physics}
 \laplacian{\Psi} \quad \curl{\vb{a}} \quad \div{\vb{a}} \quad \grad{\Psi}
 \]</span></p>
 <p><span class="math display">\[
-$\mel{n}{H}{m}\quad \mel**{n}{H}{m}$
+\mel{n}{H}{m}\quad \mel**{n}{H}{m}
 \]</span></p>
 ]]></content>
       <categories>
