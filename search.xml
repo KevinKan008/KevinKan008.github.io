@@ -538,12 +538,12 @@ TeX 吉祥物
 <p>示例1 <span class="math inline">\(\bra{\psi} \quad \ket{\psi}\)</span></p>
 <p>示例2 <span class="math inline">\(\Gamma(n) = (n-1)!\quad \forall n \in \mathbb{N}\)</span></p>
 <p>对于简单的公式，使用下面的方式给公式一个标记， <span class="math display">\[
-\begin{equation}\label{mee}
-E=mc^2
+\begin{equation}
+\mathrm{e}^{i\pi} + 1 = 0  \label{euler}
 \end{equation}
-\]</span> 然后，在正文中，你可以轻松引用上述公式，一个简单的例子如下： 著名的质能方程 <span class="math inline">\(\eqref{mee}\)</span> 由爱因斯坦提出 ...</p>
+\]</span> 然后，在正文中，你可以轻松引用上述公式，一个简单的例子如下： 著名的质能方程 <span class="math inline">\(\eqref{euler}\)</span> 由爱因斯坦提出 ...</p>
 <p>示例3 <span class="math display">\[ \Gamma(z) = \int_0^\infty t^{z-1}e^{-t}dt \]</span></p>
-<p>测试4 <span class="math inline">\(\mathrm{e}^{i\pi} + 1 = 0\)</span> 测试5 <span class="math display">\[ \mathrm{e}^{i\pi} + 1 = 0 \]</span></p>
+<p>测试4 <span class="math inline">\(\mathrm{e}^{i\pi} + 1 = 0\)</span></p>
 <p><span class="math display">\[
 \begin{eqnarray}
 \nabla\cdot\vec{E} &amp;=&amp; \frac{\rho}{\epsilon_0} \\
@@ -677,9 +677,12 @@ E=mc^2
 <p>在新版本的 <code>NexT</code> 主题中，我们加入了公式自动编号和引用功能。下面简要介绍一下如何使用这项功能。</p>
 <p>为了使用这项功能，一般来说，你必须把所使用的 <span class="math inline">\(\LaTeX\)</span> 公式放在 <code>equation</code> 环境里面，采用旧的方法（也就是说，仅仅把公式的每一边用两个 <code>$</code> 符号包含起来）是无效的。如何引用公式？你只需要在书写公式的时候给公式一个 <code>\label{}</code> 标记（<code>tag</code>），然后在正文中，可以使用 <code>\ref{}</code> 或者 <code>\eqref{}</code> 命令来引用对应的公式。使用 <code>\eqref{}</code> 是推荐的方式，因为如果你使用 <code>\ref{}</code>，公式在文中的引用编号将没有圆括号包围。下面介绍几种常见的公式编号例子。</p>
 <p>对于简单的公式，使用下面的方式给公式一个标记，</p>
-<p><span class="math display">\[\begin{equation}\label{eq1}
-E=mc^2
-\end{equation}\]</span> 然后，在正文中，你可以轻松引用上述公式，一个简单的例子如下： <span class="math inline">\(a^2+b^2=c^2\)</span> 著名的质能方程 <span class="math inline">\(\eqref{eq1}\)</span> 由爱因斯坦提出 ... 对于多行公式，在 <code>equation</code> 环境中，你可以使用 <code>aligned</code> 环境把公式分成多行，</p>
+<p><span class="math display">\[
+\begin{equation}
+E=mc^2  \label{mass}
+\end{equation}
+\]</span></p>
+<p>然后，在正文中，你可以轻松引用上述公式，一个简单的例子如下： <span class="math inline">\(a^2+b^2=c^2\)</span> 著名的质能方程 <span class="math inline">\(\eqref{mass}\)</span> 由爱因斯坦提出 ... 对于多行公式，在 <code>equation</code> 环境中，你可以使用 <code>aligned</code> 环境把公式分成多行，</p>
 <p><span class="math display">\[\begin{equation}\label{eq2}
 \begin{aligned}
 a &amp;= b + c \\
