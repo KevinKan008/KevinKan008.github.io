@@ -541,7 +541,7 @@ TeX 吉祥物
 \begin{equation}
 \mathrm{e}^{i\pi} + 1 = 0  \label{euler}
 \end{equation}
-\]</span> 然后，在正文中，你可以轻松引用上述公式，一个简单的例子如下： 著名的质能方程 <span class="math inline">\(\eqref{euler}\)</span> 由爱因斯坦提出 ...</p>
+\]</span> 然后，在正文中，你可以轻松引用上述公式，一个简单的例子如下： 著名的欧拉恒等式 <span class="math inline">\(\eqref{euler}\)</span> 由大数学家欧拉提出 ...</p>
 <p>示例3 <span class="math display">\[ \Gamma(z) = \int_0^\infty t^{z-1}e^{-t}dt \]</span></p>
 <p>测试4 <span class="math inline">\(\mathrm{e}^{i\pi} + 1 = 0\)</span></p>
 <p><span class="math display">\[
@@ -563,8 +563,8 @@ TeX 吉祥物
         <category>Markdown</category>
       </categories>
       <tags>
-        <tag>Markdown</tag>
         <tag>Typora</tag>
+        <tag>Markdown</tag>
       </tags>
   </entry>
   <entry>
@@ -707,8 +707,8 @@ l &amp;= m - n \label{eq5}
         <category>Markdown</category>
       </categories>
       <tags>
-        <tag>Hexo</tag>
         <tag>Markdown</tag>
+        <tag>Hexo</tag>
       </tags>
   </entry>
 </search>
