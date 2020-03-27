@@ -1,6 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>加载physics宏包的另一种方式 (NexT v7.7.2 已支持？)</title>
+    <url>/a1516c94/</url>
+    <content><![CDATA[<script id="MathJax-script" async
+  src="https://cdnjs.loli.net/ajax/libs/mathjax/3.0.1/es5/tex-mml-chtml.js">
+</script>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">id</span>=<span class="string">"MathJax-script"</span> <span class="attr">async</span></span></span><br><span class="line"><span class="tag">  <span class="attr">src</span>=<span class="string">"https://cdnjs.loli.net/ajax/libs/mathjax/3.0.1/es5/tex-mml-chtml.js"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p><span class="math display">\[
+$\mel{n}{H}{m}\quad \mel**{n}{H}{m}$
+\]</span></p>
+<p>然后在公式表达式里面引入，eg:</p>
+<figure class="highlight tex"><table><tr><td class="code"><pre><span class="line"><span class="formula">$$</span></span><br><span class="line"><span class="formula"><span class="tag">\<span class="name">require</span><span class="string">&#123;physics&#125;</span></span></span></span><br><span class="line"><span class="formula"><span class="tag">\<span class="name">laplacian</span><span class="string">&#123;\Psi&#125;</span></span> <span class="tag">\<span class="name">quad</span></span> <span class="tag">\<span class="name">curl</span><span class="string">&#123;\vb&#123;a&#125;</span></span>&#125; <span class="tag">\<span class="name">quad</span></span> <span class="tag">\<span class="name">div</span><span class="string">&#123;\vb&#123;a&#125;</span></span>&#125; <span class="tag">\<span class="name">quad</span></span> <span class="tag">\<span class="name">grad</span><span class="string">&#123;\Psi&#125;</span></span></span></span><br><span class="line"><span class="formula">$$</span></span><br></pre></td></tr></table></figure>
+<p><span class="math display">\[
+\require{physics}
+\laplacian{\Psi} \quad \curl{\vb{a}} \quad \div{\vb{a}} \quad \grad{\Psi}
+\]</span></p>
+<p><span class="math display">\[
+$\mel{n}{H}{m}\quad \mel**{n}{H}{m}$
+\]</span></p>
+]]></content>
+      <categories>
+        <category>LaTeX</category>
+        <category>mathjax</category>
+      </categories>
+      <tags>
+        <tag>physics</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>mpv player 安装及配置</title>
     <url>/3befaed8/</url>
     <content><![CDATA[<h2 id="mpv-简介">mpv 简介</h2>
@@ -209,9 +237,9 @@ MathJax = {
 };
 </script>
 <script id="MathJax-script" async
-  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+  src="https://cdnjs.loli.net/ajax/libs/mathjax/3.0.1/es5/tex-mml-chtml.js">
 </script>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span></span><br><span class="line">MathJax = &#123;</span><br><span class="line">  loader: &#123;</span><br><span class="line"><span class="actionscript">    load: [<span class="string">'[tex]/physics'</span>]</span></span><br><span class="line">  &#125;,</span><br><span class="line">  tex: &#123;</span><br><span class="line"><span class="actionscript">    packages: &#123;<span class="string">'[+]'</span>: [<span class="string">'physics'</span>]&#125;</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;;</span><br><span class="line"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">id</span>=<span class="string">"MathJax-script"</span> <span class="attr">async</span></span></span><br><span class="line"><span class="tag">  <span class="attr">src</span>=<span class="string">"https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span></span><br><span class="line">MathJax = &#123;</span><br><span class="line">  loader: &#123;</span><br><span class="line"><span class="actionscript">    load: [<span class="string">'[tex]/physics'</span>]</span></span><br><span class="line">  &#125;,</span><br><span class="line">  tex: &#123;</span><br><span class="line"><span class="actionscript">    packages: &#123;<span class="string">'[+]'</span>: [<span class="string">'physics'</span>]&#125;</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;;</span><br><span class="line"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">id</span>=<span class="string">"MathJax-script"</span> <span class="attr">async</span></span></span><br><span class="line"><span class="tag">  <span class="attr">src</span>=<span class="string">"https://cdnjs.loli.net/ajax/libs/mathjax/3.0.1/es5/tex-mml-chtml.js"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
 <a id="more"></a>
 <p>Hello <span class="math inline">\(\LaTeX\)</span></p>
 <p><span class="math inline">\(\Gamma(n) = (n-1)!\quad \forall n \in \mathbb{N}\)</span></p>
@@ -397,6 +425,7 @@ C @&lt;a&lt;b&lt; D
 <p><span style="color:red">this text is red</span></p>
 <a id="more"></a>
 <p><span class="math display">\[
+\require{physics}
 \order{x^2} \quad \comm{A}{B} \quad \laplacian{\Psi} \quad \curl{\vb{a}} \quad \div{\vb{a}} \quad \grad{\Psi}
 \]</span></p>
 <p><span class="math display">\[
@@ -445,9 +474,13 @@ TeX 吉祥物
 <li>[x] Complete item</li>
 </ul>
 <h2 id="化学式">化学式</h2>
-<figure class="highlight tex"><table><tr><td class="code"><pre><span class="line"><span class="formula">$<span class="tag">\<span class="name">ce</span><span class="string">&#123;H2O&#125;</span></span> <span class="tag">\<span class="name">quad</span></span> <span class="tag">\<span class="name">ce</span><span class="string">&#123;Fe^n+&#125;</span></span>$</span></span><br><span class="line"><span class="formula">$<span class="tag">\<span class="name">ce</span><span class="string">&#123;[Pt(\eta^2-C2H4)Cl3]-&#125;</span></span>$</span>  </span><br><span class="line"><span class="formula">$<span class="tag">\<span class="name">ce</span><span class="string">&#123;NO_x&#125;</span></span>$</span>  <span class="formula">$<span class="tag">\<span class="name">ce</span><span class="string">&#123;CO3^2-_&#123;(aq)&#125;</span></span>&#125;$</span></span><br><span class="line"><span class="formula">$<span class="tag">\<span class="name">pu</span><span class="string">&#123;123 kJ//mol&#125;</span></span>$</span>  <span class="formula">$<span class="tag">\<span class="name">ce</span><span class="string">&#123;A-B=C#D&#125;</span></span>$</span> <span class="formula">$<span class="tag">\<span class="name">ce</span><span class="string">&#123;C6H5-CHO&#125;</span></span>$</span></span><br><span class="line"><span class="formula">$<span class="tag">\<span class="name">pu</span><span class="string">&#123;123 kJ*mol-1&#125;</span></span>$</span>  <span class="formula">$<span class="tag">\<span class="name">ce</span><span class="string">&#123;[\&#123;(X2)3\&#125;</span></span>2]^3+&#125;$</span></span><br><span class="line"><span class="formula">$<span class="tag">\<span class="name">ce</span><span class="string">&#123;KCr(SO4)2*12H2O&#125;</span></span>$</span> <span class="formula">$<span class="tag">\<span class="name">pu</span><span class="string">&#123;123 kJ mol-1&#125;</span></span>$</span>  </span><br><span class="line"><span class="formula">$<span class="tag">\<span class="name">ce</span><span class="string">&#123;^40_18Ar + \gamma&#123;&#125;</span></span> + <span class="tag">\<span class="name">nu</span></span>_e&#125;$</span>  <span class="formula">$<span class="tag">\<span class="name">ce</span><span class="string">&#123;M^&#123;..&#125;</span></span>_i&#125;$</span>  </span><br><span class="line"><span class="formula">$<span class="tag">\<span class="name">ce</span><span class="string">&#123;x Na(NH4)HPO4 -&gt;[\Delta] (NaPO3)_x + x NH3 ^ + x H2O&#125;</span></span>$</span></span><br><span class="line"><span class="formula">$<span class="tag">\<span class="name">ce</span><span class="string">&#123;Fe^&#123;II&#125;</span></span>Fe^&#123;III&#125;2O4&#125;$</span></span><br></pre></td></tr></table></figure>
-<p><span class="math inline">\(\ce{H2O} \quad \ce{Fe^n+}\)</span> <span class="math inline">\(\ce{[Pt(\eta^2-C2H4)Cl3]-}\)</span><br />
-<span class="math inline">\(\ce{NO_x}\)</span> <span class="math inline">\(\ce{CO3^2-_{(aq)}}\)</span> <span class="math inline">\(\pu{123 kJ//mol}\)</span> <span class="math inline">\(\ce{A-B=C#D}\)</span> <span class="math inline">\(\ce{C6H5-CHO}\)</span> <span class="math inline">\(\pu{123 kJ*mol-1}\)</span> <span class="math inline">\(\ce{[\{(X2)3\}2]^3+}\)</span> <span class="math inline">\(\ce{KCr(SO4)2*12H2O}\)</span> <span class="math inline">\(\pu{123 kJ mol-1}\)</span><br />
+<figure class="highlight tex"><table><tr><td class="code"><pre><span class="line"><span class="formula">$<span class="tag">\<span class="name">ce</span><span class="string">&#123;H2O&#125;</span></span> <span class="tag">\<span class="name">quad</span></span> <span class="tag">\<span class="name">ce</span><span class="string">&#123;Fe^n+&#125;</span></span>$</span></span><br><span class="line"><span class="formula">$<span class="tag">\<span class="name">ce</span><span class="string">&#123;[Pt(\eta^2-C2H4)Cl3]-&#125;</span></span>$</span>  </span><br><span class="line"><span class="formula">$<span class="tag">\<span class="name">ce</span><span class="string">&#123;NO_x&#125;</span></span>$</span>  <span class="formula">$<span class="tag">\<span class="name">ce</span><span class="string">&#123;CO3^2-_&#123;(aq)&#125;</span></span>&#125;$</span></span><br><span class="line"><span class="formula">$<span class="tag">\<span class="name">pu</span><span class="string">&#123;123 kJ//mol&#125;</span></span>$</span>  <span class="formula">$<span class="tag">\<span class="name">ce</span><span class="string">&#123;A-B=C#D&#125;</span></span>$</span>  <span class="formula">$<span class="tag">\<span class="name">ce</span><span class="string">&#123;C6H5-CHO&#125;</span></span>$</span></span><br><span class="line"><span class="formula">$<span class="tag">\<span class="name">pu</span><span class="string">&#123;123 kJ*mol-1&#125;</span></span>$</span>  <span class="formula">$<span class="tag">\<span class="name">ce</span><span class="string">&#123;[\&#123;(X2)3\&#125;</span></span>2]^3+&#125;$</span></span><br><span class="line"><span class="formula">$<span class="tag">\<span class="name">ce</span><span class="string">&#123;KCr(SO4)2*12H2O&#125;</span></span>$</span> <span class="formula">$<span class="tag">\<span class="name">pu</span><span class="string">&#123;123 kJ mol-1&#125;</span></span>$</span>  </span><br><span class="line"><span class="formula">$<span class="tag">\<span class="name">ce</span><span class="string">&#123;^40_18Ar + \gamma&#123;&#125;</span></span> + <span class="tag">\<span class="name">nu</span></span>_e&#125;$</span>  <span class="formula">$<span class="tag">\<span class="name">ce</span><span class="string">&#123;M^&#123;..&#125;</span></span>_i&#125;$</span>  </span><br><span class="line"><span class="formula">$<span class="tag">\<span class="name">ce</span><span class="string">&#123;x Na(NH4)HPO4 -&gt;[\Delta] (NaPO3)_x + x NH3 ^ + x H2O&#125;</span></span>$</span></span><br><span class="line"><span class="formula">$<span class="tag">\<span class="name">ce</span><span class="string">&#123;Fe^&#123;II&#125;</span></span>Fe^&#123;III&#125;2O4&#125;$</span></span><br></pre></td></tr></table></figure>
+<p><span class="math inline">\(\ce{H2O} \quad \ce{Fe^n+}\)</span><br />
+<span class="math inline">\(\ce{[Pt(\eta^2-C2H4)Cl3]-}\)</span><br />
+<span class="math inline">\(\ce{NO_x}\)</span> <span class="math inline">\(\ce{CO3^2-_{(aq)}}\)</span><br />
+<span class="math inline">\(\pu{123 kJ//mol}\)</span> <span class="math inline">\(\ce{A-B=C#D}\)</span> <span class="math inline">\(\ce{C6H5-CHO}\)</span><br />
+<span class="math inline">\(\pu{123 kJ*mol-1}\)</span> <span class="math inline">\(\ce{[\{(X2)3\}2]^3+}\)</span><br />
+<span class="math inline">\(\ce{KCr(SO4)2*12H2O}\)</span> <span class="math inline">\(\pu{123 kJ mol-1}\)</span><br />
 <span class="math inline">\(\ce{^40_18Ar + \gamma{} + \nu_e}\)</span> <span class="math inline">\(\ce{M^{..}_i}\)</span><br />
 <span class="math inline">\(\ce{x Na(NH4)HPO4 -&gt;[\Delta] (NaPO3)_x }\)</span><br />
 <span class="math inline">\(\ce{ + x NH3 ^ + x H2O}\)</span><br />

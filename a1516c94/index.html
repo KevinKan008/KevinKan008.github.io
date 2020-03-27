@@ -23,17 +23,20 @@
     var CONFIG = {"hostname":"kevinkan008.github.io","root":"/","scheme":"Mist","version":"7.7.2","exturl":false,"sidebar":{"position":"left","width":300,"display":"post","padding":18,"offset":12,"onmobile":true},"copycode":{"enable":true,"show_result":true,"style":"flat"},"back2top":{"enable":false,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":false,"pangu":true,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":false,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="天地有正气，杂然赋流形。">
-<meta property="og:type" content="website">
-<meta property="og:title" content="梵特の希">
-<meta property="og:url" content="https://kevinkan008.github.io/tags/Typora/index.html">
+  <meta name="description" content="123&lt;script id&#x3D;&quot;MathJax-script&quot; async  src&#x3D;&quot;https:&#x2F;&#x2F;cdnjs.loli.net&#x2F;ajax&#x2F;libs&#x2F;mathjax&#x2F;3.0.1&#x2F;es5&#x2F;tex-mml-chtml.js&quot;&gt;&lt;&#x2F;script&gt; \[ $\mel{n}{H}{m}\quad \mel**{n}{H}{m}$ \] 然后在公式表达式里面引入，eg">
+<meta property="og:type" content="article">
+<meta property="og:title" content="加载physics宏包的另一种方式 (NexT v7.7.2 已支持？)">
+<meta property="og:url" content="https://kevinkan008.github.io/a1516c94/index.html">
 <meta property="og:site_name" content="梵特の希">
-<meta property="og:description" content="天地有正气，杂然赋流形。">
+<meta property="og:description" content="123&lt;script id&#x3D;&quot;MathJax-script&quot; async  src&#x3D;&quot;https:&#x2F;&#x2F;cdnjs.loli.net&#x2F;ajax&#x2F;libs&#x2F;mathjax&#x2F;3.0.1&#x2F;es5&#x2F;tex-mml-chtml.js&quot;&gt;&lt;&#x2F;script&gt; \[ $\mel{n}{H}{m}\quad \mel**{n}{H}{m}$ \] 然后在公式表达式里面引入，eg">
 <meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2020-03-27T10:21:44.000Z">
+<meta property="article:modified_time" content="2020-03-27T10:35:49.233Z">
 <meta property="article:author" content="Kevin Kan">
+<meta property="article:tag" content="physics">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="https://kevinkan008.github.io/tags/Typora/">
+<link rel="canonical" href="https://kevinkan008.github.io/a1516c94/">
 
 
 <script id="page-configurations">
@@ -41,7 +44,7 @@
   CONFIG.page = {
     sidebar: "",
     isHome : false,
-    isPost : false
+    isPost : true
   };
 </script>
 <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/theme-next/theme-next-needmoreshare2@1/needsharebutton.min.css"><style>
@@ -59,7 +62,7 @@
 }
 </style><link href="https://fonts.loli.net/css?family=Noto+Serif+SC:400,500,700&display=swap&subset=chinese-simplified" rel="stylesheet">
 <link href="https://fonts.loli.net/css?family=Ma+Shan+Zheng&display=swap&subset=chinese-simplified" rel="stylesheet">
-  <title>标签: Typora | 梵特の希</title>
+  <title>加载physics宏包的另一种方式 (NexT v7.7.2 已支持？) | 梵特の希</title>
   
 
 
@@ -198,54 +201,195 @@
           <div class="content">
             
 
+  <div class="posts-expand">
+      
   
   
-  
-  <div class="post-block">
-    <div class="posts-collapse">
-      <div class="collection-title">
-        <h1 class="collection-header">Typora
-          <small>标签</small>
+  <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://kevinkan008.github.io/a1516c94/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/uploads/avatar.jpg">
+      <meta itemprop="name" content="Kevin Kan">
+      <meta itemprop="description" content="天地有正气，杂然赋流形。">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="梵特の希">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          加载physics宏包的另一种方式 (NexT v7.7.2 已支持？)
         </h1>
-      </div>
+
+        <div class="post-meta">
+          
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2020-03-27 18:21:44 / 修改时间：18:35:49" itemprop="dateCreated datePublished" datetime="2020-03-27T18:21:44+08:00">2020-03-27</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/LaTeX/" itemprop="url" rel="index"><span itemprop="name">LaTeX</span></a>
+                </span>
+                  ，
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/LaTeX/mathjax/" itemprop="url" rel="index"><span itemprop="name">mathjax</span></a>
+                </span>
+            </span>
+
+          
+            <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv" style="display: none;">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span id="busuanzi_value_page_pv"></span>
+            </span>
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="fa fa-comment-o"></i>
+      </span>
+      <span class="post-meta-item-text">Valine：</span>
+    
+    <a title="valine" href="/a1516c94/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/a1516c94/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-file-word-o"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>473</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-clock-o"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>1 m</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
-    <div class="collection-year">
-      <h1 class="collection-header">2020</h1>
+        <script id="MathJax-script" async
+  src="https://cdnjs.loli.net/ajax/libs/mathjax/3.0.1/es5/tex-mml-chtml.js">
+</script>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">id</span>=<span class="string">"MathJax-script"</span> <span class="attr">async</span></span></span><br><span class="line"><span class="tag">  <span class="attr">src</span>=<span class="string">"https://cdnjs.loli.net/ajax/libs/mathjax/3.0.1/es5/tex-mml-chtml.js"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p><span class="math display">\[
+$\mel{n}{H}{m}\quad \mel**{n}{H}{m}$
+\]</span></p>
+<p>然后在公式表达式里面引入，eg:</p>
+<figure class="highlight tex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="formula">$$</span></span><br><span class="line"><span class="formula"><span class="tag">\<span class="name">require</span><span class="string">&#123;physics&#125;</span></span></span></span><br><span class="line"><span class="formula"><span class="tag">\<span class="name">laplacian</span><span class="string">&#123;\Psi&#125;</span></span> <span class="tag">\<span class="name">quad</span></span> <span class="tag">\<span class="name">curl</span><span class="string">&#123;\vb&#123;a&#125;</span></span>&#125; <span class="tag">\<span class="name">quad</span></span> <span class="tag">\<span class="name">div</span><span class="string">&#123;\vb&#123;a&#125;</span></span>&#125; <span class="tag">\<span class="name">quad</span></span> <span class="tag">\<span class="name">grad</span><span class="string">&#123;\Psi&#125;</span></span></span></span><br><span class="line"><span class="formula">$$</span></span><br></pre></td></tr></table></figure>
+<p><span class="math display">\[
+\require{physics}
+\laplacian{\Psi} \quad \curl{\vb{a}} \quad \div{\vb{a}} \quad \grad{\Psi}
+\]</span></p>
+<p><span class="math display">\[
+$\mel{n}{H}{m}\quad \mel**{n}{H}{m}$
+\]</span></p>
+
     </div>
 
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2020-02-12T14:25:00+08:00"
-              content="2020-02-12">
-          02-12
-        </time>
+    
+    
+    <div class="post-widgets">
+      <div id="needsharebutton-postbottom">
+        <span class="btn">
+          <i class="fa fa-share-alt" aria-hidden="true"></i>
+        </span>
+      </div>
+    </div><div style="text-align: center"><span id="jrsc" >正在加载今日诗词....</span></div>
+        <div class="reward-container">
+  <div>buy me a cup of coffee ☕️</div>
+  <button onclick="var qr = document.getElementById('qr'); qr.style.display = (qr.style.display === 'none') ? 'block' : 'none';">
+    打赏
+  </button>
+  <div id="qr" style="display: none;">
+      
+      <div style="display: inline-block;">
+        <img src="/uploads/wechatpay.png" alt="Kevin Kan 微信支付">
+        <p>微信支付</p>
+      </div>
+      
+      <div style="display: inline-block;">
+        <img src="/uploads/alipay.jpg" alt="Kevin Kan 支付宝">
+        <p>支付宝</p>
       </div>
 
-      <h2 class="post-title">
-          <a class="post-title-link" href="/da891ef6/" itemprop="url">
-            <span itemprop="name">MARKDOWN 语法说明</span>
-          </a>
-      </h2>
-
-    </header>
-  </article>
-
-    </div>
   </div>
+</div>
+
+        
+
+<div>
+<ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者： </strong>Kevin Kan
+  </li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="https://kevinkan008.github.io/a1516c94/" title="加载physics宏包的另一种方式 (NexT v7.7.2 已支持？)">https://kevinkan008.github.io/a1516c94/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fa fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+</div>
+
+
+      <footer class="post-footer">
+          
+          <div class="post-tags">
+              <a href="/tags/physics/" rel="tag"><i class="fa fa-tag"></i> physics</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/3befaed8/" rel="prev" title="mpv player 安装及配置">
+      <i class="fa fa-chevron-left"></i> mpv player 安装及配置
+    </a></div>
+      <div class="post-nav-item"></div>
+    </div>
+      </footer>
+    
+  </article>
   
   
   
 
-  
-
+  </div>
 
 
           </div>
           
+    <div class="comments" id="valine-comments"></div>
 
 <script>
   window.addEventListener('tabs:register', () => {
@@ -563,7 +707,7 @@ if (document.querySelectorAll('pre.mermaid').length) {
       quicklink({
         timeout : 3000,
         priority: true,
-        ignores : [uri => uri.includes('#'),uri => uri == 'https://kevinkan008.github.io/tags/Typora/',]
+        ignores : [uri => uri.includes('#'),uri => uri == 'https://kevinkan008.github.io/a1516c94/',]
       });
       });
   </script>
