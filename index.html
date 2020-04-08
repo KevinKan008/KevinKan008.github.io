@@ -19,7 +19,7 @@
 
 <script id="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"kevinkan008.github.io","root":"/","scheme":"Mist","version":"7.7.2","exturl":false,"sidebar":{"position":"right","width":300,"display":"post","padding":18,"offset":12,"onmobile":true},"copycode":{"enable":true,"show_result":true,"style":"flat"},"back2top":{"enable":false,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":true,"lazyload":false,"pangu":true,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":false,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+    var CONFIG = {"hostname":"kevinkan008.github.io","root":"/","scheme":"Mist","version":"7.8.0","exturl":false,"sidebar":{"position":"left","width":300,"display":"post","padding":18,"offset":12,"onmobile":true},"copycode":{"enable":true,"show_result":true,"style":"flat"},"back2top":{"enable":false,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":true,"lazyload":false,"pangu":true,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":false,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
   <meta name="description" content="天地有正气，杂然赋流形。">
@@ -40,7 +40,8 @@
   CONFIG.page = {
     sidebar: "",
     isHome : true,
-    isPost : false
+    isPost : false,
+    lang   : 'zh-CN'
   };
 </script>
 <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/theme-next/theme-next-needmoreshare2@1/needsharebutton.min.css"><style>
@@ -107,14 +108,12 @@
 
   <div class="site-meta">
 
-    <div>
-      <a href="/" class="brand" rel="start">
-        <span class="logo-line-before"><i></i></span>
-        <span class="site-title">梵特の希</span>
-        <span class="logo-line-after"><i></i></span>
-      </a>
-    </div>
-        <p class="site-subtitle">西敏寺的七里香</p>
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">梵特の希</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">西敏寺的七里香</p>
   </div>
 
   <div class="site-nav-right">
@@ -125,8 +124,9 @@
 </div>
 
 
+
+
 <nav class="site-nav">
-  
   <ul id="menu" class="menu">
         <li class="menu-item menu-item-home">
 
@@ -158,16 +158,18 @@
         </a>
       </li>
   </ul>
-
 </nav>
-  <div class="site-search">
+
+
+
+  <div class="search-pop-overlay">
     <div class="popup search-popup">
-    <div class="search-header">
+        <div class="search-header">
   <span class="search-icon">
     <i class="fa fa-search"></i>
   </span>
   <div class="search-input-container">
-    <input autocomplete="off" autocorrect="off" autocapitalize="off"
+    <input autocomplete="off" autocapitalize="off"
            placeholder="搜索..." spellcheck="false"
            type="search" class="search-input">
   </div>
@@ -175,12 +177,15 @@
     <i class="fa fa-times-circle"></i>
   </span>
 </div>
-<div id="search-result"></div>
-
-</div>
-<div class="search-pop-overlay"></div>
-
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
   </div>
+</div>
+
+    </div>
+  </div>
+
 </div>
     </header>
 
@@ -194,14 +199,12 @@
         <div class="content-wrap">
           
 
-          <div class="content">
+          <div class="content index posts-expand">
             
-
-  <div class="posts-expand">
-        
+      
   
   
-  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="https://kevinkan008.github.io/4a17b156/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -214,17 +217,12 @@
       <meta itemprop="name" content="梵特の希">
     </span>
       <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
+        <h2 class="post-title" itemprop="name headline">
           
             <a href="/4a17b156/" class="post-title-link" itemprop="url">Hello World & Hexo</a>
-        </h1>
+        </h2>
 
         <div class="post-meta">
-          
-          
-            <span style="color: Tomato;">
-            <i class="fa fa-thumb-tack fa-fw"></i></span>|
-          
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
@@ -238,7 +236,7 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-04-09 03:11:06" itemprop="dateModified" datetime="2020-04-09T03:11:06+08:00">2020-04-09</time>
+                <time title="修改时间：2020-04-09 04:09:10" itemprop="dateModified" datetime="2020-04-09T04:09:10+08:00">2020-04-09</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -281,7 +279,7 @@
                 <i class="fa fa-clock-o"></i>
               </span>
                 <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>4 m</span>
+              <span>4 分钟</span>
             </span>
 
         </div>
@@ -294,8 +292,9 @@
 
       
           <h2 id="hello-hexo-next">Hello Hexo &amp; NexT!</h2>
-<p>一键四连 xx <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo clean &amp;&amp; hexo g -d &amp;&amp; hexo s -o</span><br></pre></td></tr></table></figure></p>
+<p>一键四连 x4 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo clean &amp;&amp; hexo g -d &amp;&amp; hexo s -o</span><br></pre></td></tr></table></figure></p>
 <p>NexT v7.7.2 Support MathJax v3.0</p>
+<p><a href="https://code.visualstudio.com/docs/python/data-science-tutorial" target="_blank" rel="noopener">Data Science in Visual Studio Code</a></p>
 <p>妙啊，支持新增的 <code>braket、physics</code> 宏包了</p>
 <p><a href="http://mirrors.ctan.org/macros/latex/contrib/physics/physics.pdf" target="_blank" rel="noopener">CTAN上physics宏包的pdf文档</a></p>
 <p><span class="math inline">\(\require{physics}\)</span> <span class="math inline">\(\Gamma(n) = (n-1)!\quad \forall n \in \mathbb{N}\)</span></p>
@@ -327,10 +326,10 @@
   
   
 
-        
+      
   
   
-  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="https://kevinkan008.github.io/82d246a9/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -343,17 +342,12 @@
       <meta itemprop="name" content="梵特の希">
     </span>
       <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
+        <h2 class="post-title" itemprop="name headline">
           
             <a href="/82d246a9/" class="post-title-link" itemprop="url">公开课搬运相关</a>
-        </h1>
+        </h2>
 
         <div class="post-meta">
-          
-          
-            <span style="color: Tomato;">
-            <i class="fa fa-thumb-tack fa-fw"></i></span>|
-          
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
@@ -410,7 +404,7 @@
                 <i class="fa fa-clock-o"></i>
               </span>
                 <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>1 m</span>
+              <span>1 分钟</span>
             </span>
 
         </div>
@@ -440,10 +434,10 @@
   
   
 
-        
+      
   
   
-  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="https://kevinkan008.github.io/5351f40c/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -456,17 +450,12 @@
       <meta itemprop="name" content="梵特の希">
     </span>
       <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
+        <h2 class="post-title" itemprop="name headline">
           
             <a href="/5351f40c/" class="post-title-link" itemprop="url">升级NexT主题（由NexT.Mist v7.7.1 升级至 v7.7.2）</a>
-        </h1>
+        </h2>
 
         <div class="post-meta">
-          
-          
-            <span style="color: Tomato;">
-            <i class="fa fa-thumb-tack fa-fw"></i></span>|
-          
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
@@ -523,7 +512,7 @@
                 <i class="fa fa-clock-o"></i>
               </span>
                 <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>3 m</span>
+              <span>3 分钟</span>
             </span>
 
         </div>
@@ -565,10 +554,10 @@
   
   
 
-        
+      
   
   
-  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="https://kevinkan008.github.io/e33aadbd/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -581,17 +570,12 @@
       <meta itemprop="name" content="梵特の希">
     </span>
       <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
+        <h2 class="post-title" itemprop="name headline">
           
             <a href="/e33aadbd/" class="post-title-link" itemprop="url">youtube-dl、you-get、ffmpeg 和批处理文件</a>
-        </h1>
+        </h2>
 
         <div class="post-meta">
-          
-          
-            <span style="color: Tomato;">
-            <i class="fa fa-thumb-tack fa-fw"></i></span>|
-          
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
@@ -644,7 +628,7 @@
                 <i class="fa fa-clock-o"></i>
               </span>
                 <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>5 m</span>
+              <span>5 分钟</span>
             </span>
 
         </div>
@@ -680,10 +664,10 @@
   
   
 
-        
+      
   
   
-  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="https://kevinkan008.github.io/da891ef6/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -696,17 +680,12 @@
       <meta itemprop="name" content="梵特の希">
     </span>
       <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
+        <h2 class="post-title" itemprop="name headline">
           
             <a href="/da891ef6/" class="post-title-link" itemprop="url">MARKDOWN 语法说明</a>
-        </h1>
+        </h2>
 
         <div class="post-meta">
-          
-          
-            <span style="color: Tomato;">
-            <i class="fa fa-thumb-tack fa-fw"></i></span>|
-          
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
@@ -759,7 +738,7 @@
                 <i class="fa fa-clock-o"></i>
               </span>
                 <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>3 m</span>
+              <span>3 分钟</span>
             </span>
 
         </div>
@@ -813,10 +792,10 @@ C @&lt;a&lt;b&lt; D
   
   
 
-        
+      
   
   
-  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="https://kevinkan008.github.io/a1516c94/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -829,14 +808,12 @@ C @&lt;a&lt;b&lt; D
       <meta itemprop="name" content="梵特の希">
     </span>
       <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
+        <h2 class="post-title" itemprop="name headline">
           
             <a href="/a1516c94/" class="post-title-link" itemprop="url">加载physics宏包的另一种方式 (NexT v7.7.2 已支持？)</a>
-        </h1>
+        </h2>
 
         <div class="post-meta">
-          
-          
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
@@ -887,7 +864,7 @@ C @&lt;a&lt;b&lt; D
                 <i class="fa fa-clock-o"></i>
               </span>
                 <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>1 m</span>
+              <span>1 分钟</span>
             </span>
 
         </div>
@@ -930,10 +907,10 @@ C @&lt;a&lt;b&lt; D
   
   
 
-        
+      
   
   
-  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="https://kevinkan008.github.io/3befaed8/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -946,14 +923,12 @@ C @&lt;a&lt;b&lt; D
       <meta itemprop="name" content="梵特の希">
     </span>
       <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
+        <h2 class="post-title" itemprop="name headline">
           
             <a href="/3befaed8/" class="post-title-link" itemprop="url">mpv player 安装及配置</a>
-        </h1>
+        </h2>
 
         <div class="post-meta">
-          
-          
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
@@ -1010,7 +985,7 @@ C @&lt;a&lt;b&lt; D
                 <i class="fa fa-clock-o"></i>
               </span>
                 <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>1 m</span>
+              <span>1 分钟</span>
             </span>
 
         </div>
@@ -1049,10 +1024,10 @@ C @&lt;a&lt;b&lt; D
   
   
 
-        
+      
   
   
-  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="https://kevinkan008.github.io/59b5be49/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1065,14 +1040,12 @@ C @&lt;a&lt;b&lt; D
       <meta itemprop="name" content="梵特の希">
     </span>
       <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
+        <h2 class="post-title" itemprop="name headline">
           
             <a href="/59b5be49/" class="post-title-link" itemprop="url">在md里面用脚本加载physics宏包 (NexT v7.7.2 已支持)</a>
-        </h1>
+        </h2>
 
         <div class="post-meta">
-          
-          
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
@@ -1129,7 +1102,7 @@ C @&lt;a&lt;b&lt; D
                 <i class="fa fa-clock-o"></i>
               </span>
                 <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>1 m</span>
+              <span>1 分钟</span>
             </span>
 
         </div>
@@ -1177,10 +1150,10 @@ MathJax = {
   
   
 
-        
+      
   
   
-  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="https://kevinkan008.github.io/e3afb269/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1193,14 +1166,12 @@ MathJax = {
       <meta itemprop="name" content="梵特の希">
     </span>
       <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
+        <h2 class="post-title" itemprop="name headline">
           
             <a href="/e3afb269/" class="post-title-link" itemprop="url">MermaidTest</a>
-        </h1>
+        </h2>
 
         <div class="post-meta">
-          
-          
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
@@ -1244,7 +1215,7 @@ MathJax = {
                 <i class="fa fa-clock-o"></i>
               </span>
                 <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>1 m</span>
+              <span>1 分钟</span>
             </span>
 
         </div>
@@ -1279,10 +1250,10 @@ MathJax = {
   
   
 
-        
+      
   
   
-  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="https://kevinkan008.github.io/c6731e3b/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1295,14 +1266,12 @@ MathJax = {
       <meta itemprop="name" content="梵特の希">
     </span>
       <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
+        <h2 class="post-title" itemprop="name headline">
           
             <a href="/c6731e3b/" class="post-title-link" itemprop="url">External Libraries</a>
-        </h1>
+        </h2>
 
         <div class="post-meta">
-          
-          
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
@@ -1346,7 +1315,7 @@ MathJax = {
                 <i class="fa fa-clock-o"></i>
               </span>
                 <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>2 m</span>
+              <span>2 分钟</span>
             </span>
 
         </div>
@@ -1381,7 +1350,6 @@ MathJax = {
   
   
 
-  </div>
 
   
 
@@ -1392,7 +1360,7 @@ MathJax = {
 
 <script>
   window.addEventListener('tabs:register', () => {
-    let activeClass = CONFIG.comments.activeClass;
+    let { activeClass } = CONFIG.comments;
     if (CONFIG.comments.storage) {
       activeClass = localStorage.getItem('comments_active') || activeClass;
     }
@@ -1525,6 +1493,10 @@ MathJax = {
     </ul>
   </div>
 
+<link rel="stylesheet" href="/musicdist/APlayer.min.css">
+<div id="aplayer"></div>
+<script type="text/javascript" src="/musicdist/APlayer.min.js"></script>
+<script type="text/javascript" src="/musicdist/music.js"></script
       </div>
 
     </div>
@@ -1537,6 +1509,8 @@ MathJax = {
 
     <footer class="footer">
       <div class="footer-inner">
+        
+
         
 
 <div class="copyright">
@@ -1556,17 +1530,14 @@ MathJax = {
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="站点阅读时长">19 m</span>
+    <span title="站点阅读时长">19 分钟</span>
 </div>
-  <div class="powered-by">Powered by <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> v4.2.0
-  </div>
-  <span class="post-meta-divider">|</span>
-  <div class="theme-info">Theme – <a href="https://mist.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Mist</a> v7.7.2
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://mist.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Mist</a> 强力驱动
   </div>
 
         
 <div class="busuanzi-count">
-  <script pjax async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+  <script data-pjax async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 </div>
 
 
@@ -1601,6 +1572,7 @@ var pjax = new Pjax({
     '#page-configurations',
     '.content-wrap',
     '.post-toc-wrap',
+    '.languages',
     '#pjax'
   ],
   switches: {
@@ -1612,7 +1584,7 @@ var pjax = new Pjax({
 });
 
 window.addEventListener('pjax:success', () => {
-  document.querySelectorAll('script[pjax], script#page-configurations, #pjax script').forEach(element => {
+  document.querySelectorAll('script[data-pjax], script#page-configurations, #pjax script').forEach(element => {
     var code = element.text || element.textContent || element.innerHTML || '';
     var parent = element.parentNode;
     parent.removeChild(element);
@@ -1631,8 +1603,8 @@ window.addEventListener('pjax:success', () => {
       // Force synchronous loading of peripheral JS.
       script.async = false;
     }
-    if (element.getAttribute('pjax') !== null) {
-      script.setAttribute('pjax', '');
+    if (element.dataset.pjax !== undefined) {
+      script.dataset.pjax = '';
     }
     if (code !== '') {
       script.appendChild(document.createTextNode(code));
@@ -1673,9 +1645,9 @@ window.addEventListener('pjax:success', () => {
 
 
 
-<script pjax>
+<script data-pjax>
 if (document.querySelectorAll('pre.mermaid').length) {
-  NexT.utils.getScript('https://cdnjs.loli.net/ajax/libs/mermaid/8.3.0/mermaid.min.js', () => {
+  NexT.utils.getScript('https://cdnjs.loli.net/ajax/libs/mermaid/8.4.8/mermaid.min.js', () => {
     mermaid.initialize({
       theme    : 'forest',
       logLevel : 3,
