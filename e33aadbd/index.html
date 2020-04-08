@@ -19,7 +19,7 @@
 
 <script id="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"kevinkan008.github.io","root":"/","scheme":"Mist","version":"7.8.0","exturl":false,"sidebar":{"position":"left","width":300,"display":"post","padding":18,"offset":12,"onmobile":true},"copycode":{"enable":true,"show_result":true,"style":"flat"},"back2top":{"enable":false,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":true,"lazyload":false,"pangu":true,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":false,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+    var CONFIG = {"hostname":"kevinkan008.github.io","root":"/","scheme":"Mist","version":"7.8.0","exturl":false,"sidebar":{"position":"left","width":300,"display":"post","padding":18,"offset":12,"onmobile":true},"copycode":{"enable":true,"show_result":true,"style":"flat"},"back2top":{"enable":false,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":true,"lazyload":true,"pangu":true,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":true,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":false,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
   <meta name="description" content="youtube-dl、you-get的安装 在安装这两个命令行下载工具前需要先安装Python和ffmpeg 12pip3 install youtube-dlpip3 install you-get 检验安装是否成功 12youtube-dl --versionyou-get --version 更新 12pip3 install --upgrade youtube-dlpip3 instal">
@@ -314,14 +314,14 @@
 <h2 id="installing-ffmpeg-in-windows">Installing FFmpeg in Windows</h2>
 <p><a href="https://www.wikihow.com/Install-FFmpeg-on-Windows" target="_blank" rel="noopener">详细的安装图文教程可参考这里</a></p>
 <p><a href="https://ffmpeg.zeranoe.com/builds/" target="_blank" rel="noopener">FFmpeg下载地址</a></p>
-<img src="/images/ffmpeg-download.png" />
+<img data-src="/images/ffmpeg-download.png" />
 <center>
 <font size="4" color="red">FFmpeg下载页面</font>
 </center>
 <p>根据自己的操作系统选择下载最新的64位或32位静态程序版本： 下载的Win10 64位静态程序版本名称大致长这样：</p>
 <p><code>ffmpeg-20200225-36451f9-win64-static.zip</code></p>
 <p>解压下载好的FFmpeg程序压缩包,将其目录下的bin子目录添加至系统环境变量</p>
-<img src="/images/ffmpeg-dir.png" />
+<img data-src="/images/ffmpeg-dir.png" />
 <center>
 <font size="4" color="red">FFmpeg程序包解压后的文件结构</font>
 </center>
@@ -333,7 +333,7 @@
 <p>查看视频的信息 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">youtube-dl -F <span class="string">"your_video_url"</span></span><br><span class="line">you-get -i <span class="string">"your_video_url"</span></span><br></pre></td></tr></table></figure> 下载 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">youtube-dl <span class="string">"your_video_url"</span></span><br><span class="line">you-get <span class="string">"your_video_url"</span></span><br></pre></td></tr></table></figure></p>
 <p><strong>下载播放列表</strong>（推荐用 <code>youtube-dl</code>）</p>
 <p>貌似会自动识别列表，可以不用加 <code>--yes-playlist</code> 选项 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">youtube-dl -f <span class="string">"bestvideo+bestaudio[ext=m4a]/bestvideo+bestaudio/best"</span> --merge-output-format mp4 --yes-playlist <span class="string">"playlist_url"</span></span><br></pre></td></tr></table></figure> 从播放列表的第5个视频开始下载 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">youtube-dl -f <span class="string">"bestvideo+bestaudio[ext=m4a]/bestvideo+bestaudio/best"</span> --merge-output-format mp4 --playlist-start=5 <span class="string">"playlist_url"</span></span><br></pre></td></tr></table></figure> 从播放列表里面选择性下载 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">youtube-dl -f <span class="string">"bestvideo+bestaudio[ext=m4a]/bestvideo+bestaudio/best"</span> --merge-output-format mp4 --playlist-item=3,6,9-12 <span class="string">"playlist_url"</span></span><br></pre></td></tr></table></figure> 将字幕软嵌到视频里并获得高质量的MP4格式（需要特定播放器，这些视频上传b站貌似看不到字幕） <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">youtube-dl -f <span class="string">"bestvideo+bestaudio[ext=m4a]/bestvideo+bestaudio/best"</span> --merge-output-format mp4 --write-sub --sub-lang=en --convert-subs=ass --playlist-item=8,9 --embed-subs <span class="string">"playlist_url"</span></span><br></pre></td></tr></table></figure></p>
-列出视频对应的所有字幕（自动字幕、上传字幕） List all available subtitles for the video <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">youtube-dl --list-subs <span class="string">"video_url"</span></span><br></pre></td></tr></table></figure> 例如： <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">youtube-dl --list-subs <span class="string">"https://youtu.be/WUvTyaaNkzM"</span></span><br></pre></td></tr></table></figure> <img src="/images/yousrt.png" />
+列出视频对应的所有字幕（自动字幕、上传字幕） List all available subtitles for the video <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">youtube-dl --list-subs <span class="string">"video_url"</span></span><br></pre></td></tr></table></figure> 例如： <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">youtube-dl --list-subs <span class="string">"https://youtu.be/WUvTyaaNkzM"</span></span><br></pre></td></tr></table></figure> <img data-src="/images/yousrt.png" />
 <center>
 <font size="4" color="red">前面为自动字幕，最后面的几个为上传字幕，默认格式为<code>vtt</code></font>
 </center>
@@ -377,11 +377,11 @@
 <p>将<code>[]</code>替换成你需要的特殊字符： <figure class="highlight bat"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">@<span class="built_in">echo</span> off</span><br><span class="line"><span class="keyword">for</span> /f "tokens=<span class="number">1</span>,<span class="number">2</span>* delims=-" <span class="variable">%%a</span> <span class="keyword">in</span> ('<span class="built_in">dir</span> /a-d/b') <span class="keyword">do</span> <span class="keyword">if</span> <span class="keyword">exist</span> "<span class="variable">%%~</span>a-<span class="variable">%%~</span>b" <span class="built_in">ren</span> "<span class="variable">%%~</span>a-<span class="variable">%%~</span>b" "<span class="variable">%%~</span>a<span class="variable">%%~</span>xb"</span><br><span class="line"><span class="built_in">pause</span></span><br></pre></td></tr></table></figure> 示例(对含有两个特殊字符无效)： <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">abc-wee123</span><span class="selector-class">.txt</span></span><br><span class="line"><span class="selector-tag">sddf-tthh</span><span class="selector-class">.txt</span></span><br><span class="line"><span class="selector-tag">qaq-dff-ghh</span><span class="selector-class">.txt</span></span><br></pre></td></tr></table></figure> 将变成 <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">abc</span><span class="selector-class">.txt</span></span><br><span class="line"><span class="selector-tag">sddf</span><span class="selector-class">.txt</span></span><br><span class="line"><span class="selector-tag">qaq-dff-ghh</span><span class="selector-class">.txt</span></span><br></pre></td></tr></table></figure></p>
 <h3 id="将当前目录和子目录不限层级下的所有文件列出">将当前目录和子目录（不限层级）下的所有文件列出</h3>
 <p><strong>然后可以对其复制或者剪切操作</strong></p>
-<img src="/images/before-search.png" />
+<img data-src="/images/before-search.png" />
 <center>
 <font size="4" color="red">操作前</font>
 </center>
-<img src="/images/after-search.png" />
+<img data-src="/images/after-search.png" />
 <center>
 <font size="4" color="red">操作后</font>
 </center>
@@ -669,6 +669,7 @@
   <script src="/lib/anime.min.js"></script>
   <script src="//cdn.jsdelivr.net/gh/theme-next/theme-next-pjax@0/pjax.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/medium-zoom@1/dist/medium-zoom.min.js"></script>
+  <script src="https://cdnjs.loli.net/ajax/libs/lozad.js/1.14.0/lozad.min.js"></script>
   <script src="https://cdnjs.loli.net/ajax/libs/pangu/4.0.7/pangu.min.js"></script>
 
 <script src="/js/utils.js"></script>
